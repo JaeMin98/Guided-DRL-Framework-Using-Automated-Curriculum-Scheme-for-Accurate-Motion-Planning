@@ -10,7 +10,6 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     sudo apt install ros-noetic-moveit
     sudo apt-get install ros-noetic-joint-trajectory-controller
     sudo apt-get install ros-noetic-rosbridge-server
-    sudo apt-get install ros-noetic-joint-trajectory-controller
 
 ## ROS 작업공간 설정
     http://wiki.ros.org/ko/catkin/Tutorials/create_a_workspace
