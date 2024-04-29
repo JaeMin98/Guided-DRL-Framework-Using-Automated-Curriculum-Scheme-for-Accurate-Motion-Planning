@@ -96,6 +96,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
         catkin_make
         source ./devel/setup.bash
         source ~/.bashrc
+        roslaunch ned2_moveit demo_gazebo.launch
 ---------------------------------------------------------
 
 ## bashrc 편의설정
