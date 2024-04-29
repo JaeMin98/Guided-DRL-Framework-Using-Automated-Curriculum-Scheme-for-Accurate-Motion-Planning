@@ -91,8 +91,11 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ## niryo ned2(robot arm) ROS pacakge 다운로드
     https://drive.google.com/file/d/1mJgEO4bg3msIKPUKgLKcpfUyTkcQOVlF/view?usp=sharing
-        # 압축을 풀고 ~/catkin_ws/src에 넣고 " ~/catkin_ws & catkin_make & source ~/.bashrc "
-        
+        # 압축을 풀고 ~/catkin_ws/src에 넣고
+        cd ~/catkin_ws
+        catkin_make
+        source ./devel/setup.bash
+        source ~/.bashrc
 ---------------------------------------------------------
 
 ## bashrc 편의설정
@@ -114,7 +117,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
         # ROS 단축어 설정
     alias sb="source ~/.bashrc"
-    alias cm="cd ~/catkin_ws & catkin_make"
+    alias cm="catkin_make & source ./devel/setup.bash"
     alias rc='rosclean purge -y'
     alias rn='rosclean purge -y&roslaunch ned2_moveit demo_gazebo.launch'
 
