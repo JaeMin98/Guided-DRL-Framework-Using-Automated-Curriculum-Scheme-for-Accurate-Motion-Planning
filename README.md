@@ -87,7 +87,12 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 ### cuDNN 설치
         # cuDNN 버전 호환성 확인 : https://en.wikipedia.org/wiki/CUDA#GPUs_supported
     https://developer.nvidia.com/rdp/cudnn-archive
-    
+---------------------------------------------------------
+
+## niryo ned2(robot arm) ROS pacakge 다운로드
+    https://drive.google.com/file/d/1mJgEO4bg3msIKPUKgLKcpfUyTkcQOVlF/view?usp=sharing
+        # 압축을 풀고 ~/catkin_ws/src에 넣고 " ~/catkin_ws & catkin_make & source ~/.bashrc "
+        
 ---------------------------------------------------------
 
 ## bashrc 편의설정
@@ -103,16 +108,16 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     alias python=python3
     alias pip=pip3
 
-        # ros setup
+        # ROS setup
     source /opt/ros/noetic/setup.bash
     source ~/catkin_ws/devel/setup.bash
 
-        # ros 단축어 설정
+        # ROS 단축어 설정
     alias sb="source ~/.bashrc"
     alias cm="cd ~/catkin_ws & catkin_make"
     alias rc='rosclean purge -y'
     alias rn='rosclean purge -y&roslaunch ned2_moveit demo_gazebo.launch'
 
-        # ros IP 및 포트 지정, 같은 로컬 네트워크에서 서로 겹치지 않게하는 역할
+        # ROS IP 및 포트 지정, 같은 로컬 네트워크에서 서로 겹치지 않게하는 역할
     export ROS_MASTER_URI=http://192.168.1.121:11313
     export ROS_HOSTNAME=192.168.1.121
