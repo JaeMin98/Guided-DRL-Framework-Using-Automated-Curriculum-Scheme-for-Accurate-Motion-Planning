@@ -90,7 +90,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 ---------------------------------------------------------
 
 ## niryo ned2(robot arm) ROS pacakge 다운로드
-    https://drive.google.com/file/d/1mJgEO4bg3msIKPUKgLKcpfUyTkcQOVlF/view?usp=sharing
+    https://drive.google.com/file/d/1R_Lr5dDcLRc0oqfuJMkV8asckWMMeXkj/view?usp=sharing
         # 압축을 풀고 ~/catkin_ws/src에 넣고
         cd ~/catkin_ws
         catkin_make
