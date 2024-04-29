@@ -98,25 +98,27 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ## bashrc 편의설정
     gedit ~/.bashrc
-
-### CUDA 경로 지정 (윈도우의 시스템 환경 변수와 같음)
+    
+    ### 맨 아래에 원하는 라인을 추가
+    
+    ### CUDA 경로 지정 (윈도우의 시스템 환경 변수와 같음)
     export PATH=/usr/local/cuda-12.4/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH
 
-### python 3.x버전만 사용하도록 조정
+    ### python 3.x버전만 사용하도록 조정
     alias python=python3
     alias pip=pip3
 
-### ros setup
+    ### ros setup
     source /opt/ros/noetic/setup.bash
     source ~/catkin_ws/devel/setup.bash
 
-### ros 단축어 설정
+    ### ros 단축어 설정
     alias sb="source ~/.bashrc"
     alias cm="cd ~/catkin_ws & catkin_make"
     alias rc='rosclean purge -y'
     alias rn='rosclean purge -y&roslaunch ned2_moveit demo_gazebo.launch'
 
-### ros IP 지정, 같은 로컬 네트워크에서 서로 겹치지 않게하는 역할
+    ### ros IP 지정, 같은 로컬 네트워크에서 서로 겹치지 않게하는 역할
     export ROS_MASTER_URI=http://192.168.1.121:11313
     export ROS_HOSTNAME=192.168.1.121
