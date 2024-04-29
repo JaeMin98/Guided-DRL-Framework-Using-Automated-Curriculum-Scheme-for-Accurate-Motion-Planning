@@ -64,49 +64,59 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     sudo apt-get autoclean
     sudo rm -rf /usr/local/cuda*
 
-### 설치를 위한 Key 값 정의
-    sudo wget -O /etc/apt/preferences.d/cuda-repository-pin-600 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-    sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/7fa2af80.pub
-    sudo add-apt-repository "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
-
-### 그래픽 드라이버 설치 (예: 470)
-    sudo apt-get install nvidia-driver-470
+### 그래픽 드라이버 설치
+    #설치 가능한 드라이버 확인
+    ubuntu-drivers devices
+    
+    #버전 선택 후 설치
+    sudo apt-get install nvidia-driver-(Veirsion, ex 470)
     sudo apt-get install dkms nvidia-modprobe
+    
     sudo apt-get update
     sudo apt-get upgrade
+    
     sudo reboot now
+
+    #그래픽드라이버 설치 확인 및 추천 CUDA 버전 확인
     nvidia-smi
 
-### CUDA 설치 (예: 11.4)
-    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-    sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
-    wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda-repo-ubuntu2004-11-4-local_11.4.0-470.42.01-1_amd64.deb
-    sudo dpkg -i cuda-repo-ubuntu2004-11-4-local_11.4.0-470.42.01-1_amd64.deb
-    sudo apt-key add /var/cuda-repo-ubuntu2004-11-4-local/7fa2af80.pub
-    sudo apt-get update
-    sudo apt-get -y install cuda
-    ls /usr/local | grep cuda
-    sudo sh -c "echo 'export PATH=$PATH:/usr/local/cuda-11.4/bin'>> /etc/profile"
-    sudo sh -c "echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.4/lib64'>> /etc/profile"
-    sudo sh -c "echo 'export CUDARDIR=/usr/local/cuda-11.4'>> /etc/profile"
-    source /etc/profile
+### CUDA 설치
+    #CUDA 버전 선택 후 설치
+    #GPU Driver와 CUDA 버전 호환성 확인 : https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id4
+    
+    sudo apt install nvidia-cuda-toolkit
+    https://developer.nvidia.com/cuda-toolkit-archive
+    
     nvcc -V
-
-### cuDNN 설치 (8.2.2 for CUDA 11.4, cuDNN Library for Linux (X86_64))
-    cuDNN 소스파일 다운로드 (8.2.2 for CUDA 11.4, cuDNN Library for Linux (X86_64))
+    #만약 버전이 안나온다면 "bash 편의설정" 1 참조
+    
+### cuDNN 설치
+    #cuDNN 버전 호환성 확인 : https://en.wikipedia.org/wiki/CUDA#GPUs_supported
     https://developer.nvidia.com/rdp/cudnn-archive
-    cd Downloads/
-    tar xvzf cudnn-11.4-linux-x64-v8.2.2.26.tgz
-    sudo cp cuda/include/cudnn* /usr/local/cuda/include
-    sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
-    sudo chmod a+r /usr/local/cuda-11.4/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
-    sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_train.so.8.2.2 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_train.so.8
-    sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8.2.2  /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8
-    sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8.2.2  /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8
-    sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8.2.2  /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8
-    sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_train.so.8.2.2  /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_train.so.8
-    sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8.2.2 /usr/local/cuda-11
+    
+---------------------------------------------------------
 
+## bashrc 편의설정
+    gedit ~/.bashrc
 
-https://teddylee777.github.io/linux/ubuntu2004-cuda-update/   
-https://lapina.tistory.com/131
+### CUDA 경로 지정 (윈도우의 시스템 환경 변수와 같음)
+    export PATH=/usr/local/cuda-12.4/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH
+
+### python 3.x버전만 사용하도록 조정
+    alias python=python3
+    alias pip=pip3
+
+### ros setup
+    source /opt/ros/noetic/setup.bash
+    source ~/catkin_ws/devel/setup.bash
+
+### ros 단축어 설정
+    alias sb="source ~/.bashrc"
+    alias cm="cd ~/catkin_ws & catkin_make"
+    alias rc='rosclean purge -y'
+    alias rn='rosclean purge -y&roslaunch ned2_moveit demo_gazebo.launch'
+
+### ros IP 지정, 같은 로컬 네트워크에서 서로 겹치지 않게하는 역할
+    export ROS_MASTER_URI=http://192.168.1.121:11313
+    export ROS_HOSTNAME=192.168.1.121
