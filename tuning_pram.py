@@ -2,9 +2,9 @@ import main as Training
 import Config
 
 Config.isExit_IfSuccessLearning = False
-Config.num_steps = 20000
+Config.num_steps = 30000
 
-tau_list = [0.01, 0.005, 0.003]
+tau_list = [0.01, 0.005, 0.003, 0.001]
 lr_list = [0.001, 0.0015, 0.003]
 batch_list = [1028, 512, 256, 128, 64]
 
