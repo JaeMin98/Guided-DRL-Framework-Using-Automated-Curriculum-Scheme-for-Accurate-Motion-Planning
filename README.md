@@ -105,8 +105,9 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
         # 맨 아래에 원하는 라인을 추가
     
         # CUDA 경로 지정 (윈도우의 시스템 환경 변수와 같음)
-    export PATH=/usr/local/cuda-12.4/bin:$PATH
-    export LD_LIBRARY_PATH=/usr/local/cuda-12.4/lib64:$LD_LIBRARY_PATH
+        # 설치된 CUDA는 cd usr/local에서 ls로 확인 가능
+    export PATH=/usr/local/cuda-(자신의 쿠다 버전)/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/local/cuda-(자신의 쿠다 버전)/lib64:$LD_LIBRARY_PATH
 
         # python 3.x버전만 사용하도록 조정
     alias python=python3
@@ -123,5 +124,6 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     alias rn='rosclean purge -y&roslaunch ned2_moveit demo_gazebo.launch'
 
         # ROS IP 및 포트 지정, 같은 로컬 네트워크에서 서로 겹치지 않게하는 역할
-    export ROS_MASTER_URI=http://192.168.1.121:11313
-    export ROS_HOSTNAME=192.168.1.121
+        # ifconfig로 자신의 IP 확인 가능
+    export ROS_MASTER_URI=http://(자신의 IP):11313
+    export ROS_HOSTNAME=(자신의 IP)
