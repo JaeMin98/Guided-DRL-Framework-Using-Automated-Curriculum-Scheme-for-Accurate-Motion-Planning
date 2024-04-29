@@ -11,7 +11,7 @@ action_size = 3
 ## soft actor-critic parameter
 policy = "Gaussian"
 gamma = 0.99
-tau = 0.01
+tau = 0.005
 lr = 0.0015 #0.0003
 alpha = 0.2
 automatic_entropy_tuning = False

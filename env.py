@@ -342,6 +342,11 @@ if __name__ == "__main__":
                 env.reset()
         env.reset()
 
-    action_test()
+    env = Ned2_control()
+    env.reset()
+    for i in range(100):
+        time.sleep(0.05)
+        print(env.observation())
+
     # success_test()
 
