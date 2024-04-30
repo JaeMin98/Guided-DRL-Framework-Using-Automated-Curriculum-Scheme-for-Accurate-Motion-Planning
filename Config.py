@@ -12,7 +12,7 @@ action_size = 3
 policy = "Gaussian"
 gamma = 0.99
 tau = 0.005
-lr = 0.0015 #0.0003
+lr = 0.0005 #0.0003
 alpha = 0.2
 automatic_entropy_tuning = False
 seed = 3333 # seed = 123456 -> random
@@ -28,7 +28,7 @@ eval_frequency = 30
 
 Is_Clearing_Memory = True
 num_steps = 1000001 #30000 * time
-batch_size = 2048
+batch_size = 512
 start_steps = 10000
 max_episode_steps = 256
 time_sleep_interval = 0.05 #sec 적절한 값 찾기. 학습이 시작되면 값이 달라짐
