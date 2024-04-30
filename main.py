@@ -46,9 +46,8 @@ class Training_Robotic_arm():
         self.episode_success_csv_data_list = []
 
         now = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        project_name = 'hyper_parameter_tuning'
-        run_name = "tau:" + str(Config.tau) + "_lr:" + str(Config.lr) + "_batch:" + str(Config.batch_size) + "_" + now
-
+        project_name = 'Niryo_NED2_SAC_singletarget'
+        run_name = now + "_tau:" + str(Config.tau) + "_lr:" + str(Config.lr) + "_batch:" + str(Config.batch_size)
         wandb.init(project=project_name, # 프로젝트 이름
                 name=run_name,
                 config=Config.args) # run 이름

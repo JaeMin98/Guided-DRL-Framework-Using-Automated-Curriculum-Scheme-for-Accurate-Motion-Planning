@@ -27,7 +27,7 @@ eval_episode = 3
 eval_frequency = 30
 
 Is_Clearing_Memory = True
-num_steps = 1000001 #30000 * time
+num_steps = 1000001 #60000 * time
 batch_size = 512
 start_steps = 10000
 max_episode_steps = 256
