@@ -150,24 +150,27 @@ class Ned2_control(object):
 
     def get_state(self) -> list:
         while(1):
-            joint_values = self.move_group.get_current_joint_values()
-            end_effector_XYZ = self.get_pose()
+            try:
+                joint_values = self.move_group.get_current_joint_values()
+                end_effector_XYZ = self.get_pose()
 
-            joint_values = [round(element, 4) for element in joint_values]
-            end_effector_XYZ = [round(element, 4) for element in end_effector_XYZ]
-            distance = self.euclidean_distance(end_effector_XYZ, self.target)
+                joint_values = [round(element, 4) for element in joint_values]
+                end_effector_XYZ = [round(element, 4) for element in end_effector_XYZ]
+                distance = self.euclidean_distance(end_effector_XYZ, self.target)
 
-            state = []
-            state.append(distance)
-            for i in range(len(self.target)):
-                state.append(end_effector_XYZ[i])
-                state.append(self.target[i])
-            for i in range(3):
-                state.append(joint_values[i])
+                state = []
+                state.append(distance)
+                for i in range(len(self.target)):
+                    state.append(end_effector_XYZ[i])
+                    state.append(self.target[i])
+                for i in range(3):
+                    state.append(joint_values[i])
 
-            if(len(state) == self.state_size):
-                if not(np.isnan(state).any()):
-                    return state
+                if(len(state) == self.state_size):
+                    if not(np.isnan(state).any()):
+                        return state
+            except:
+                print("get state error")
                 
     def euclidean_distance(self, point1, point2):
         x1, y1, z1 = point1
