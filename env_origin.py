@@ -169,7 +169,7 @@ class Ned2_control(object):
                 if not(np.isnan(state).any()):
                     return state
                 
-    def euclidean_distance(self, point1, point2):
+    def euclidean_distance(self, point1, point2) -> float:
         x1, y1, z1 = point1
         x2, y2, z2 = point2
         distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2)
@@ -297,18 +297,18 @@ class Curriculum_manager():
     
 
 class equalization():
-    def __init__(self, initial_value):
+    def __init__(self, initial_value) -> None:
         self.initial_value = initial_value
         self.mean = 0.5
         self.max = 1.0
 
-    def equalization_function(self, data):
+    def equalization_function(self, data) -> float:
         if data <= self.initial_value:
             return data * (self.mean / self.initial_value)
         else:
             return self.mean + (data - self.initial_value) * ((self.max - self.mean) / (1 - self.initial_value))
 
-    def get_value(self, o):
+    def get_value(self, o) -> float:
         return round(self.equalization_function(o), 4)
     
 
