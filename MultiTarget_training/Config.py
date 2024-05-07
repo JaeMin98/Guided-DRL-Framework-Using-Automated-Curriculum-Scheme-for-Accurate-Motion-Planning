@@ -12,9 +12,9 @@ action_size = 3
 policy = "Gaussian"
 gamma = 0.99
 tau = 0.005
-lr = 0.0003 #0.0003
+lr = 0.00015 #0.0003
 alpha = 0.2
-automatic_entropy_tuning = False
+automatic_entropy_tuning = True
 seed = 123456 # seed = 123456 -> random
 hidden_size = 64
 updates_per_step =1 #1 time step에 Update를 몇 번 할것인지
