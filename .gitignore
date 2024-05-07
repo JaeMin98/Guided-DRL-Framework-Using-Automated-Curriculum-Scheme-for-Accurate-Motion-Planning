@@ -1,3 +1,6 @@
 /__pycache__
 /wandb
 /models
+/MultiTarget_training/__pycache__
+/MultiTarget_training/wandb
+/MultiTarget_training/models
