@@ -6,8 +6,6 @@ import numpy as np
 import itertools
 import gc
 import os
-import time
-import logging
 
 #import custom library
 from sac import SAC
@@ -57,7 +55,7 @@ class Training_Robotic_arm():
         os.mkdir(self.folderName)
 
 
-    def Run(self):
+    def Run(self) -> None:
         for i_episode in itertools.count(1):
             self.i_episode = i_episode
 
@@ -76,7 +74,7 @@ class Training_Robotic_arm():
             # self.memory.save_buffer("Ned")
         wandb.finish()
 
-    def Run_episode(self):
+    def Run_episode(self) -> tuple:
         origin_UoC = self.env.Curriculum_manager.Current_UoC
 
         episode_reward = 0
@@ -105,25 +103,25 @@ class Training_Robotic_arm():
 
         return episode_reward, episode_steps
 
-    def Decide_action(self, state):
+    def Decide_action(self, state) -> list:
         if Config.start_steps > self.total_numsteps:
             action = np.random.uniform(-0.1, 0.1, size=Config.action_size).tolist()
         else:
             action = self.agent.select_action(state)
         return action
 
-    def Process_step(self, state, action, reward, next_state, done):
+    def Process_step(self, state, action, reward, next_state, done) -> None:
         self.memory.push(state, action, reward, next_state, done)
         state = next_state
         if len(self.memory) > Config.batch_size:
             self.Update_networks()
 
-    def Update_networks(self):
+    def Update_networks(self) -> None:
         for _ in range(Config.updates_per_step):
             self.losses = self.agent.update_parameters(self.memory, Config.batch_size, self.updates)
             self.updates += 1
 
-    def Evaluate(self):
+    def Evaluate(self) -> tuple:
         if Config.eval is True:
             avg_reward = 0.
             episodes = Config.eval_episode
@@ -179,21 +177,21 @@ class Training_Robotic_arm():
         return episode_reward, episode_steps
 
 
-    def Log_losses(self, critic_1_loss, critic_2_loss, policy_loss, ent_loss, alpha):
+    def Log_losses(self, critic_1_loss, critic_2_loss, policy_loss, ent_loss, alpha) -> None:
         wandb.log({'NN_logs/critic_loss_1':critic_1_loss}, step=self.i_episode)
         wandb.log({'NN_logs/critic_loss_2':critic_2_loss}, step=self.i_episode)
         wandb.log({'NN_logs/policy_loss':policy_loss}, step=self.i_episode)
         wandb.log({'NN_logs/entropy_loss':ent_loss}, step=self.i_episode)
         wandb.log({'NN_logs/entropy':alpha}, step=self.i_episode)
 
-    def Log_episode_results(self, episode_reward, episode_steps):
+    def Log_episode_results(self, episode_reward, episode_steps) -> None:
         wandb.log({'Episodic_logs/reward':round(episode_reward, 2)}, step=self.i_episode)
         wandb.log({'Episodic_logs/episode_steps':episode_steps}, step=self.i_episode)
         wandb.log({'Episodic_logs/UoC':self.env.Curriculum_manager.Current_UoC}, step=self.i_episode)
         wandb.log({'Episodic_logs/total_numsteps':self.total_numsteps}, step=self.i_episode)
         wandb.log({'Episodic_logs/replaymemory_size':len(self.memory)}, step=self.i_episode)
         
-    def Log_successrate_per_UoC(self):
+    def Log_successrate_per_UoC(self) -> None:
         successrate_dict = self.env.Curriculum_manager.success_rate_per_UoC
         phase = self.env.Curriculum_manager.Current_UoC
         if(successrate_dict != None):
@@ -203,7 +201,7 @@ class Training_Robotic_arm():
                     log_name = 'Curriculum_logs_phase_'+str(phase)+'/UoC_'+str(UoC)
                     wandb.log({log_name:successrate*100}, step=self.i_episode)
 
-    def Save_model(self):
+    def Save_model(self) -> None:
         torch.save({
             'model': self.agent.policy.state_dict(),
             'optimizer': self.agent.policy_optim.state_dict()

@@ -1,0 +1,1127 @@
+2024-05-07 17:41:36,632 INFO    StreamThr :455175 [internal.py:wandb_internal():86] W&B internal server running at pid: 455175, started at: 2024-05-07 17:41:36.630666
+2024-05-07 17:41:36,636 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status
+2024-05-07 17:41:36,641 INFO    WriterThread:455175 [datastore.py:open_for_write():87] open: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/run-3mfz0iqs.wandb
+2024-05-07 17:41:36,642 DEBUG   SenderThread:455175 [sender.py:send():379] send: header
+2024-05-07 17:41:36,659 DEBUG   SenderThread:455175 [sender.py:send():379] send: run
+2024-05-07 17:41:37,176 INFO    SenderThread:455175 [dir_watcher.py:__init__():211] watching files in: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files
+2024-05-07 17:41:37,176 INFO    SenderThread:455175 [sender.py:_start_run_threads():1124] run started: 3mfz0iqs with start time 1715071296.631518
+2024-05-07 17:41:37,193 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: check_version
+2024-05-07 17:41:37,194 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: check_version
+2024-05-07 17:41:37,260 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: run_start
+2024-05-07 17:41:37,298 DEBUG   HandlerThread:455175 [system_info.py:__init__():26] System info init
+2024-05-07 17:41:37,298 DEBUG   HandlerThread:455175 [system_info.py:__init__():41] System info init done
+2024-05-07 17:41:37,298 INFO    HandlerThread:455175 [system_monitor.py:start():194] Starting system monitor
+2024-05-07 17:41:37,299 INFO    SystemMonitor:455175 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-07 17:41:37,300 INFO    HandlerThread:455175 [system_monitor.py:probe():214] Collecting system info
+2024-05-07 17:41:37,301 INFO    SystemMonitor:455175 [interfaces.py:start():190] Started cpu monitoring
+2024-05-07 17:41:37,303 INFO    SystemMonitor:455175 [interfaces.py:start():190] Started disk monitoring
+2024-05-07 17:41:37,305 INFO    SystemMonitor:455175 [interfaces.py:start():190] Started gpu monitoring
+2024-05-07 17:41:37,306 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:37,308 INFO    SystemMonitor:455175 [interfaces.py:start():190] Started memory monitoring
+2024-05-07 17:41:37,310 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:37,313 INFO    SystemMonitor:455175 [interfaces.py:start():190] Started network monitoring
+2024-05-07 17:41:37,476 DEBUG   HandlerThread:455175 [system_info.py:probe():150] Probing system
+2024-05-07 17:41:37,482 DEBUG   HandlerThread:455175 [system_info.py:_probe_git():135] Probing git
+2024-05-07 17:41:37,491 DEBUG   HandlerThread:455175 [system_info.py:_probe_git():143] Probing git done
+2024-05-07 17:41:37,491 DEBUG   HandlerThread:455175 [system_info.py:probe():198] Probing system done
+2024-05-07 17:41:37,491 DEBUG   HandlerThread:455175 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-105-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-05-07T08:41:37.476359', 'startedAt': '2024-05-07T08:41:36.614761', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/smartcps/catkin_ws/src/my_package/src/Github/main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/JaeMin98/Soft-Actor-Critic-for-Robotarm.git', 'commit': 'f0b87520fad4d1e3732af62242fb79a7b7eb9f91'}, 'email': '81763871+JaeMin98@users.noreply.github.com', 'root': '/home/smartcps/catkin_ws/src/my_package/src/Github', 'host': 'smartcps-System-Product-Name', 'username': 'smartcps', 'executable': '/bin/python3', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1768.51375, 'min': 800.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 1661.153, 'min': 800.0, 'max': 4900.0}, {'current': 1718.901, 'min': 800.0, 'max': 4900.0}, {'current': 1687.232, 'min': 800.0, 'max': 4900.0}, {'current': 1706.169, 'min': 800.0, 'max': 4900.0}, {'current': 1500.201, 'min': 800.0, 'max': 4900.0}, {'current': 1595.033, 'min': 800.0, 'max': 4900.0}, {'current': 1562.543, 'min': 800.0, 'max': 4900.0}, {'current': 1586.98, 'min': 800.0, 'max': 4900.0}, {'current': 1698.822, 'min': 800.0, 'max': 5000.0}, {'current': 1484.972, 'min': 800.0, 'max': 5000.0}, {'current': 1415.867, 'min': 800.0, 'max': 5000.0}, {'current': 1231.438, 'min': 800.0, 'max': 5000.0}, {'current': 1374.308, 'min': 800.0, 'max': 4900.0}, {'current': 1252.966, 'min': 800.0, 'max': 4900.0}, {'current': 1281.346, 'min': 800.0, 'max': 4900.0}, {'current': 1494.512, 'min': 800.0, 'max': 4900.0}, {'current': 1187.684, 'min': 800.0, 'max': 3800.0}, {'current': 1313.421, 'min': 800.0, 'max': 3800.0}, {'current': 1314.325, 'min': 800.0, 'max': 3800.0}, {'current': 1327.225, 'min': 800.0, 'max': 3800.0}], 'disk': {'/': {'total': 609.5211639404297, 'used': 34.00708770751953}}, 'gpu': 'NVIDIA GeForce RTX 4070 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Ti', 'memory_total': 12878610432}], 'memory': {'total': 31.148101806640625}}
+2024-05-07 17:41:37,491 INFO    HandlerThread:455175 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-07 17:41:37,491 INFO    HandlerThread:455175 [system_monitor.py:probe():227] Publishing system info
+2024-05-07 17:41:37,493 INFO    HandlerThread:455175 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-07 17:41:37,497 DEBUG   SenderThread:455175 [sender.py:send():379] send: files
+2024-05-07 17:41:37,497 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-07 17:41:37,757 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-07 17:41:37,757 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: python_packages
+2024-05-07 17:41:37,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:41:37,758 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:41:37,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:41:38,065 DEBUG   SenderThread:455175 [sender.py:send():379] send: telemetry
+2024-05-07 17:41:38,185 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/requirements.txt
+2024-05-07 17:41:38,186 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-metadata.json
+2024-05-07 17:41:38,333 INFO    wandb-upload_0:455175 [upload_job.py:push():131] Uploaded file /tmp/tmparbuwlbzwandb/xa1xaq0f-wandb-metadata.json
+2024-05-07 17:41:39,315 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:39,315 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:41,316 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:41,316 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:42,015 DEBUG   SenderThread:455175 [sender.py:send():379] send: telemetry
+2024-05-07 17:41:42,016 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:41:42,057 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:42,057 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:42,057 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:42,058 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:42,058 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:43,317 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:43,318 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:45,318 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:45,319 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:47,017 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:41:47,319 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:47,319 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:49,320 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:49,320 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:50,477 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:50,480 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:50,481 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:50,481 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:41:50,481 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:50,482 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:41:50,488 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:50,498 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:41:51,181 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:41:51,321 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:51,321 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:52,499 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:41:52,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:41:52,758 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:41:52,768 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:41:53,322 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:53,322 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:55,323 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:55,323 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:57,324 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:57,325 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:58,076 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:58,077 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:41:58,078 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:41:58,079 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:41:58,095 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:41:58,121 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:58,121 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:58,122 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:58,122 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:41:58,186 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:41:59,326 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:41:59,327 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:01,328 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:01,329 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:03,098 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:03,330 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:03,330 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:03,539 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:03,540 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:03,541 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:03,541 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:03,541 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:03,541 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:03,541 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:03,546 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:04,189 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:05,331 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:05,332 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:07,334 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:07,338 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:07,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:42:07,758 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:42:07,764 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:42:08,965 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:09,191 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/config.yaml
+2024-05-07 17:42:09,340 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:09,342 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:11,342 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:11,345 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:11,596 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:11,597 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:11,597 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:11,600 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:11,637 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:11,637 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:11,637 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:11,637 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:12,193 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:13,346 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:13,347 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:14,601 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:15,347 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:15,348 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:16,901 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:16,902 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:16,902 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:16,902 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:16,902 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:16,903 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:16,904 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:16,905 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:17,195 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:17,348 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:17,348 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:19,349 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:19,350 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:19,906 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:20,187 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:20,190 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:20,193 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:20,194 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:20,194 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:20,195 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:20,197 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:20,201 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:20,201 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:21,352 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:21,353 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:22,187 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:22,188 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:22,189 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:22,189 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:22,189 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:22,189 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:22,190 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:22,200 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:22,202 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:22,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:42:22,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:42:22,766 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:42:23,353 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:23,354 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:24,576 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:24,578 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:24,579 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:24,581 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:24,617 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:24,617 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:24,617 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:24,617 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:25,203 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:25,357 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:25,358 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:25,582 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:27,359 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:27,360 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:29,361 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:29,361 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:30,583 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:31,362 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:31,362 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:32,916 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:32,917 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:32,918 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:32,918 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:32,918 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:32,919 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:32,919 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:32,933 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:33,206 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:33,362 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:33,363 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:34,111 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:34,113 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:34,114 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:34,114 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:34,114 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:34,114 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:34,115 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:34,115 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:34,207 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:35,363 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:35,364 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:36,120 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:36,849 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:36,852 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:36,853 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:36,855 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:36,855 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:36,855 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:36,856 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:36,857 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:37,208 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:37,315 DEBUG   SystemMonitor:455175 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-07 17:42:37,317 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:42:37,364 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:37,365 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:37,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:42:37,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:42:37,764 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:42:39,365 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:39,365 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:41,367 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:41,367 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:42,003 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:43,368 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:43,368 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:43,741 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:43,743 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:43,743 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:43,744 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:43,785 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:43,786 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:43,786 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:43,787 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:44,213 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:45,369 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:45,369 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:46,930 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:46,933 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:46,934 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:46,936 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:46,936 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:46,936 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:46,937 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:46,947 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:47,214 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:47,370 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:47,371 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:47,854 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:47,854 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:47,855 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:47,855 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:47,855 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:47,855 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:47,855 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:47,856 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:47,856 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:48,215 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:49,371 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:49,372 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:51,372 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:51,373 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:52,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:42:52,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:42:52,767 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:42:52,846 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:52,889 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:52,889 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:52,890 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:52,890 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:53,016 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:53,016 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:53,017 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:53,018 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:53,217 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:53,374 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:53,375 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:55,376 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:55,376 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:55,770 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:55,773 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:55,774 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:55,775 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:55,776 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:55,777 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:55,778 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:55,779 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:42:56,218 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:42:57,377 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:57,378 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:58,780 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:42:59,378 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:59,379 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:42:59,702 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:59,705 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:59,707 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:59,708 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:42:59,708 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:59,709 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:42:59,715 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:42:59,719 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:00,220 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:00,943 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:00,945 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:00,946 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:00,947 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:00,947 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:00,948 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:00,948 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:00,949 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:01,221 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:01,382 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:01,384 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:03,387 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:03,388 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:03,950 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:05,391 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:05,392 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:07,319 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:43:07,393 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:07,393 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:07,759 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:43:07,760 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:43:07,760 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:43:08,034 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:08,035 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:08,036 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:08,036 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:08,077 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:08,078 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:08,078 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:08,079 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:08,225 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:09,037 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:09,394 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:09,395 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:11,396 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:11,397 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:13,398 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:13,398 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:14,038 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:15,213 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:15,214 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:15,214 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:15,214 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:15,214 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:15,215 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:15,217 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:15,217 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:15,218 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:15,228 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:15,399 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:15,399 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:17,400 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:17,401 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:18,708 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:18,709 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:18,709 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:18,709 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:18,710 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:18,710 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:18,710 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:18,710 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:18,710 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:19,000 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:19,001 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:19,001 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:19,001 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:19,002 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:19,003 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:19,004 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:19,005 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:19,007 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:19,230 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:19,401 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:19,402 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:20,008 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:21,403 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:21,404 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:21,983 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:21,984 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:21,984 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:21,985 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:21,985 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:21,985 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:21,985 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:21,986 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:21,986 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:22,231 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:22,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:43:22,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:43:22,765 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:43:23,405 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:23,406 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:25,038 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:25,406 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:25,407 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:26,518 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:26,519 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:26,520 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:26,531 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:26,561 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:26,561 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:26,561 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:26,562 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:26,562 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:27,233 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:27,305 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:27,306 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:27,306 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:27,306 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:27,306 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:27,306 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:27,306 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:27,307 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:27,307 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:27,407 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:27,408 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:28,233 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:29,408 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:29,409 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:30,308 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:31,410 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:31,411 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:33,378 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:33,379 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:33,379 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:33,380 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:33,380 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:33,380 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:33,381 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:33,382 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:33,383 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:33,414 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:33,414 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:34,237 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:35,385 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:35,415 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:35,415 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:37,323 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:43:37,416 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:37,416 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:37,760 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:43:37,761 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:43:37,770 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:43:39,146 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:39,149 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:39,149 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:39,150 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:39,193 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:39,193 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:39,194 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:39,194 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:39,194 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:39,239 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:39,417 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:39,417 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:41,150 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:41,418 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:41,418 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:43,419 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:43,420 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:44,913 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:44,915 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:44,916 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:44,917 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:44,918 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:44,919 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:44,921 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:44,922 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:44,922 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:45,241 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:45,421 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:45,421 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:46,924 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:47,421 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:47,422 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:49,422 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:49,422 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:49,962 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:49,963 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:49,963 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:49,963 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:49,963 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:49,964 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:49,964 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:49,964 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:49,968 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:50,242 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:43:51,423 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:51,423 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:51,968 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:52,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:43:52,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:43:52,762 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:43:53,424 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:53,424 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:55,426 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:55,427 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:57,006 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:43:57,428 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:57,428 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:59,429 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:59,429 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:43:59,610 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,611 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:43:59,611 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:43:59,611 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:43:59,657 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:43:59,658 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:00,246 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:01,429 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:01,429 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:02,152 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,153 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,154 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,154 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:02,155 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:02,155 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,157 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,157 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:02,158 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,158 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,158 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:02,158 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,159 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,159 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,159 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:02,246 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:03,430 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:03,430 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:05,432 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:05,433 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:07,159 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:07,322 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:44:07,433 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:07,434 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:07,758 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:44:07,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:44:07,762 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:44:09,434 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:09,435 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:11,435 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:11,436 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:13,046 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:13,436 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:13,436 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:15,437 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:15,437 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:17,438 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:17,438 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:18,047 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:18,259 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,260 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:18,261 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:18,261 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:18,302 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,302 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,302 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,303 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,303 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,303 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,303 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,303 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,303 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:18,303 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:19,251 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:19,439 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:19,439 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:21,440 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:21,440 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:22,759 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:44:22,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:44:22,764 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:44:23,198 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,198 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,199 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,199 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,199 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,199 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:23,199 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:23,199 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,200 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:23,200 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,200 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,200 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,200 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,200 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:23,201 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:23,253 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:23,441 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:23,441 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:25,442 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:25,443 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:27,328 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,329 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,330 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,330 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,330 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:27,330 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,331 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:27,331 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,335 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,335 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,335 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,335 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,335 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:27,336 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:27,443 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:27,443 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:28,255 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:28,336 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:29,444 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:29,444 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:31,445 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:31,445 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:31,694 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,695 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,695 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,696 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:31,696 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,696 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:31,697 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,697 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,697 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,697 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,697 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,697 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,697 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:31,698 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:32,256 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:32,946 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,947 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,947 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:32,947 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,948 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:32,948 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,948 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,948 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,948 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,949 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:32,949 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,949 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,949 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:32,949 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:33,256 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:33,445 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:33,445 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:33,949 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:35,446 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:35,446 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:37,324 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:44:37,446 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:37,446 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:37,759 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:44:37,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:44:37,764 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:44:39,018 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:39,447 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:39,447 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:41,447 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:41,447 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:43,448 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:43,448 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:44,019 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:45,448 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:45,449 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:47,449 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:47,450 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:49,019 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:49,450 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:49,450 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:49,732 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,733 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,733 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,733 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,733 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:49,734 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,734 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:49,734 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,735 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,735 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,735 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,735 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,735 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:49,735 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:50,262 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:51,451 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:51,452 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:52,371 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,372 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,372 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,372 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,372 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,372 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:52,373 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:52,373 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,373 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,373 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,373 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,373 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,373 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:52,374 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:52,760 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:44:52,761 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:44:52,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:44:53,263 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:53,453 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:53,453 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:54,031 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:55,454 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:55,454 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:57,454 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:57,454 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:58,348 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,349 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,350 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,350 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:44:58,350 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,351 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:44:58,354 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,356 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,356 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:44:58,356 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,357 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,357 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,357 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:58,357 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:44:59,265 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:44:59,357 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:44:59,455 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:44:59,455 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:01,456 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:01,456 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:03,458 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:03,459 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:04,358 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:04,453 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,455 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,455 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,455 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,456 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,456 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,456 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,456 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:04,456 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:04,457 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,457 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,458 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,458 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:04,458 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:05,267 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:05,459 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:05,460 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:07,325 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:45:07,460 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:07,461 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:07,759 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:45:07,759 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:45:07,763 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:45:09,461 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:09,462 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:10,016 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:11,462 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:11,463 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:13,463 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:13,463 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:15,017 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:15,464 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:15,464 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:17,081 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,083 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,083 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,083 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:17,083 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,083 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:17,086 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,087 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,087 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,087 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,087 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,087 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,087 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,087 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:17,270 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:17,464 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:17,465 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:17,531 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,533 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,533 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,534 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,534 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:17,534 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,534 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:17,534 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,535 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,535 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,535 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,535 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,535 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:17,535 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:18,270 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:19,465 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:19,466 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:20,536 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:21,466 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:21,466 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:22,765 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:45:22,765 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:45:22,766 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:45:23,467 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:23,467 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:23,938 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,939 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,940 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:23,940 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,940 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:23,940 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:23,941 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:24,273 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:24,877 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,878 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,879 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:24,879 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,879 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:24,880 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,880 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,880 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,880 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,880 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,880 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,881 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,881 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:24,881 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:25,273 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:25,468 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:25,468 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:25,881 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:27,469 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:27,470 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:29,470 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:29,470 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:30,882 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:31,471 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:31,472 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:31,754 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,755 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,756 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,756 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:31,756 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,757 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:31,760 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,761 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:31,761 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:32,275 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:33,473 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:33,473 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:35,473 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:35,473 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:36,763 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:37,326 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:45:37,474 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:37,475 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:37,764 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:45:37,764 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:45:37,770 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:45:39,475 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:39,475 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:41,476 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:41,476 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:41,618 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,620 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,621 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,621 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:41,621 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,622 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:41,622 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,623 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,623 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,623 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,623 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,624 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,624 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:41,624 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:42,278 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:42,625 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:43,477 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:43,479 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:45,480 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:45,480 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:47,290 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,292 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,292 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,293 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:47,293 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,294 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:47,297 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,298 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,298 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,298 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,298 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,298 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,298 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:47,298 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:47,481 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:47,481 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:48,280 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:48,299 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:49,482 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:49,482 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:51,118 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,118 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,119 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,119 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:51,119 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,120 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:51,120 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,120 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,120 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,120 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,120 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,120 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,121 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,121 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:51,282 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:51,330 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,330 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,331 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,331 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:45:51,331 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:45:51,331 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:45:51,332 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:45:51,483 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:51,483 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:52,282 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:45:52,764 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:45:52,764 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:45:52,768 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:45:53,483 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:53,484 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:54,013 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:55,485 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:55,485 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:57,486 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:57,486 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:59,014 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:45:59,488 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:45:59,488 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:00,229 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,230 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,231 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,232 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:46:00,232 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,233 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:46:00,239 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,240 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,240 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,240 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,240 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,240 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,240 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:00,240 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:46:00,286 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:46:01,489 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:01,489 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:03,490 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:03,490 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:04,241 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:46:05,491 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:05,491 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:07,327 DEBUG   SenderThread:455175 [sender.py:send():379] send: stats
+2024-05-07 17:46:07,493 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:07,493 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:07,767 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:46:07,767 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:46:07,767 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:46:09,495 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:09,495 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:10,008 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:46:10,414 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,415 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,416 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:46:10,416 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,417 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:46:10,418 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,422 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,422 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,422 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,422 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,423 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,423 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,423 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:10,423 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:46:11,291 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:46:11,496 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:11,496 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:13,497 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:13,497 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:14,184 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,186 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,186 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,186 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,186 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:46:14,187 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,187 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:46:14,187 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,188 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,188 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,188 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:46:14,188 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,188 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,188 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:14,292 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:46:15,188 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:46:15,498 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:15,498 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:17,499 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:17,499 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:18,795 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,796 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,797 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:46:18,797 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,797 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:46:18,798 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,798 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,799 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,799 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,799 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,799 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,799 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,799 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:18,799 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:46:19,294 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:46:19,500 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:19,500 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:20,800 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:46:21,500 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:21,500 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:22,740 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,740 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,741 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,741 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,741 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,741 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,742 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,742 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,742 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,742 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,742 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:22,743 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:46:22,743 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:46:22,746 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:46:22,767 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-07 17:46:22,767 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-07 17:46:22,767 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: stop_status
+2024-05-07 17:46:23,295 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:46:23,501 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:23,501 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:25,502 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:25,502 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:26,711 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:46:27,502 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:27,502 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:29,503 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:29,503 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:31,503 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:31,504 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:31,712 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: status_report
+2024-05-07 17:46:32,424 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,425 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   HandlerThread:455175 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-07 17:46:32,426 DEBUG   SenderThread:455175 [sender.py:send():379] send: history
+2024-05-07 17:46:32,427 DEBUG   SenderThread:455175 [sender.py:send_request():406] send_request: summary_record
+2024-05-07 17:46:32,427 INFO    SenderThread:455175 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-07 17:46:33,298 INFO    Thread-17 :455175 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/src/Github/wandb/run-20240507_174136-3mfz0iqs/files/wandb-summary.json
+2024-05-07 17:46:33,504 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:33,504 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:35,504 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
+2024-05-07 17:46:35,505 ERROR   disk      :455175 [interfaces.py:monitor():144] Failed to sample metric: not sure how to interpret line '   7       0 loop0 52 0 2176 97 0 0 0 0 0 72 97 0 0 0 0 0 0\n'
