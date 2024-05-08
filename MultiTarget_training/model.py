@@ -109,7 +109,12 @@ class GaussianPolicy(nn.Module):
         actions_mean = self.actions_mean(state)
         actions_logstd = self.actions_logstd
         actions_std = torch.exp(actions_logstd)
-        prob = Normal(actions_mean, actions_std)
+        try:
+            prob = Normal(actions_mean, actions_std)
+        except:
+            print(actions_mean)
+            print("-----------------------------------------")
+            print(actions_std)
         if actions is None:
             # To get the actions, we sample the 4 distributions
             actions = prob.sample()
