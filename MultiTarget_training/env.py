@@ -237,7 +237,7 @@ class Curriculum_manager():
         self.Selected_UoC = 1
 
     def read_UoC_data(self, UoC) -> list:
-        with open(f'./UoC_data/UoC_{UoC-1}.csv', 'r') as file:
+        with open(f'./UoC_data/UoC_{UoC}.csv', 'r') as file:
             reader = csv.reader(file)
             return [row[:3] for row in reader]
         
