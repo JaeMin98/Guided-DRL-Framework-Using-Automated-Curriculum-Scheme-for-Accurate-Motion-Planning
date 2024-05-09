@@ -48,9 +48,9 @@ class SAC(object):
         state = torch.FloatTensor(state).to(self.device).unsqueeze(0)
   
         if evaluate is False:
-            action, _, _, std = self.policy.sample(state)
+            action, _, _ = self.policy.sample(state)
         else:
-            _, _, action, std = self.policy.sample(state)
+            _, _, action = self.policy.sample(state)
         return action.detach().cpu().numpy()[0]
 
     def update_parameters(self, memory, batch_size, updates):
@@ -64,7 +64,7 @@ class SAC(object):
         mask_batch = torch.FloatTensor(mask_batch).to(self.device).unsqueeze(1)
 
         with torch.no_grad():
-            next_state_action, next_state_log_pi, _, __ = self.policy.sample(next_state_batch)
+            next_state_action, next_state_log_pi, _ = self.policy.sample(next_state_batch)
             qf1_next_target, qf2_next_target = self.critic_target(next_state_batch, next_state_action)
             min_qf_next_target = torch.min(qf1_next_target, qf2_next_target) - self.alpha * next_state_log_pi
             next_q_value = reward_batch + mask_batch * self.gamma * (min_qf_next_target)
@@ -77,7 +77,7 @@ class SAC(object):
         qf_loss.backward()
         self.critic_optim.step()
 
-        pi, log_pi, _, _ = self.policy.sample(state_batch)
+        pi, log_pi, _ = self.policy.sample(state_batch)
 
         qf1_pi, qf2_pi = self.critic(state_batch, pi)
         min_qf_pi = torch.min(qf1_pi, qf2_pi)

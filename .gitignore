@@ -3,8 +3,8 @@
 /MultiTarget_training/__pycache__
 /MultiTarget_training/wandb
 /MultiTarget_training/models
+/MultiTarget_training/temp_files
 
 /SingleTarget_training/__pycache__
 /SingleTarget_training/wandb
 /SingleTarget_training/models
-d.zip

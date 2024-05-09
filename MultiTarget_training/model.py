@@ -1,10 +1,7 @@
-#import general libraries
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.distributions import Normal
-
-
 
 LOG_SIG_MAX = 2
 LOG_SIG_MIN = -20
@@ -18,9 +15,7 @@ epsilon = 1e-6
 def weights_init_(m):
     if isinstance(m, nn.Linear):
         nn.init.kaiming_normal_(m.weight.data, nonlinearity='relu')  # 가중치 초기화
-        nn.init.constant_(m.bias, 0)  # 편향 초기화
-
-
+        nn.init.constant_(m.bias.data, 0)  # 편향 초기화
 
 class ValueNetwork(nn.Module):
     def __init__(self, num_inputs, hidden_dim):
@@ -28,16 +23,14 @@ class ValueNetwork(nn.Module):
 
         self.linear1 = nn.Linear(num_inputs, hidden_dim)
         self.linear2 = nn.Linear(hidden_dim, hidden_dim)
-        self.linear3 = nn.Linear(hidden_dim, hidden_dim)
-        self.linear4 = nn.Linear(hidden_dim, 1)
+        self.linear3 = nn.Linear(hidden_dim, 1)
 
         self.apply(weights_init_)
 
     def forward(self, state):
         x = F.relu(self.linear1(state))
         x = F.relu(self.linear2(x))
-        x = F.relu(self.linear3(x))
-        x = self.linear4(x)
+        x = self.linear3(x)
         return x
 
 
@@ -48,14 +41,12 @@ class QNetwork(nn.Module):
         # Q1 architecture
         self.linear1 = nn.Linear(num_inputs + num_actions, hidden_dim)
         self.linear2 = nn.Linear(hidden_dim, hidden_dim)
-        self.linear3 = nn.Linear(hidden_dim, hidden_dim)
-        self.linear4 = nn.Linear(hidden_dim, 1)
+        self.linear3 = nn.Linear(hidden_dim, 1)
 
         # Q2 architecture
-        self.linear5 = nn.Linear(num_inputs + num_actions, hidden_dim)
-        self.linear6 = nn.Linear(hidden_dim, hidden_dim)
-        self.linear7 = nn.Linear(hidden_dim, hidden_dim)
-        self.linear8 = nn.Linear(hidden_dim, 1)
+        self.linear4 = nn.Linear(num_inputs + num_actions, hidden_dim)
+        self.linear5 = nn.Linear(hidden_dim, hidden_dim)
+        self.linear6 = nn.Linear(hidden_dim, 1)
 
         self.apply(weights_init_)
 
@@ -64,13 +55,11 @@ class QNetwork(nn.Module):
         
         x1 = F.relu(self.linear1(xu))
         x1 = F.relu(self.linear2(x1))
-        x1 = F.relu(self.linear3(x1))
-        x1 = self.linear4(x1)
+        x1 = self.linear3(x1)
 
-        x2 = F.relu(self.linear5(xu))
-        x2 = F.relu(self.linear6(x2))
-        x2 = F.relu(self.linear7(x2))
-        x2 = self.linear8(x2)
+        x2 = F.relu(self.linear4(xu))
+        x2 = F.relu(self.linear5(x2))
+        x2 = self.linear6(x2)
 
         return x1, x2
 
@@ -79,63 +68,39 @@ class GaussianPolicy(nn.Module):
     def __init__(self, num_inputs, num_actions, hidden_dim, action_space=None):
         super(GaussianPolicy, self).__init__()
         
-        self.actions_mean = nn.Sequential(
-            nn.Linear(num_inputs, hidden_dim),
-            nn.Tanh(),
-            nn.Linear(hidden_dim, hidden_dim),
-            nn.Tanh(),
-            nn.Linear(hidden_dim, num_actions)
-        )
-        self.actions_logstd = nn.Parameter(torch.zeros(num_actions))
-        
+        self.linear1 = nn.Linear(num_inputs, hidden_dim)
+        self.linear2 = nn.Linear(hidden_dim, hidden_dim)
+
+        self.mean_linear = nn.Linear(hidden_dim, num_actions)
+        self.log_std_linear = nn.Linear(hidden_dim, num_actions)
+
         self.apply(weights_init_)
 
         # Set fixed action scaling for output range -0.1 to 0.1
         self.action_scale = torch.FloatTensor([0.1] * num_actions)  # scale to 0.1
         self.action_bias = torch.FloatTensor([0.0] * num_actions)   # no bias needed for this range
 
-        # action rescaling
-        # if action_space is None:
-        #     self.action_scale = 1.
-        #     self.action_bias = 0.
-        # else:
-        #     self.action_scale = torch.FloatTensor(
-        #         (1.,1.,1.))
-        #     self.action_bias = torch.FloatTensor(
-        #         (0,0,0))
-
-
-    def forward(self, state, actions=None):
-        actions_mean = self.actions_mean(state)
-        actions_logstd = self.actions_logstd
-        actions_std = torch.exp(actions_logstd)
-        try:
-            prob = Normal(actions_mean, actions_std)
-        except:
-            print(actions_mean)
-            print("-----------------------------------------")
-            print(actions_std)
-        if actions is None:
-            # To get the actions, we sample the 4 distributions
-            actions = prob.sample()
-        return actions_mean, actions_std
+    def forward(self, state):
+        x = F.relu(self.linear1(state))
+        x = F.relu(self.linear2(x))
+        mean = self.mean_linear(x)
+        log_std = self.log_std_linear(x)
+        log_std = torch.clamp(log_std, min=LOG_SIG_MIN, max=LOG_SIG_MAX)
+        return mean, log_std
 
     def sample(self, state):
         mean, log_std = self.forward(state)
-        normal = Normal(mean, log_std)
+        std = log_std.exp()
+        normal = Normal(mean, std)
         x_t = normal.rsample()  # for reparameterization trick (mean + std * N(0,1))
         y_t = torch.tanh(x_t)
-        # print("y_t : ", y_t )
-        # print("self.action_scale : ", self.action_scale)
-        # print("self.action_bias : ", self.action_bias)
         action = y_t * self.action_scale + self.action_bias
         log_prob = normal.log_prob(x_t)
         # Enforcing Action Bound
         log_prob -= torch.log(self.action_scale * (1 - y_t.pow(2)) + epsilon)
         log_prob = log_prob.sum(1, keepdim=True)
         mean = torch.tanh(mean) * self.action_scale + self.action_bias
-        #print(log_std)
-        return action, log_prob, mean, log_std
+        return action, log_prob, mean
 
     def to(self, device):
         self.action_scale = self.action_scale.to(device)
@@ -148,31 +113,25 @@ class DeterministicPolicy(nn.Module):
         super(DeterministicPolicy, self).__init__()
         self.linear1 = nn.Linear(num_inputs, hidden_dim)
         self.linear2 = nn.Linear(hidden_dim, hidden_dim)
-        self.linear3 = nn.Linear(hidden_dim, hidden_dim)
 
         self.mean = nn.Linear(hidden_dim, num_actions)
         self.noise = torch.Tensor(num_actions)
 
         self.apply(weights_init_)
 
-        # Set fixed action scaling for output range -0.1 to 0.1
-        self.action_scale = torch.FloatTensor([0.1] * num_actions)  # scale to 0.1
-        self.action_bias = torch.FloatTensor([0.0] * num_actions)   # no bias needed for this range
-
-        # # action rescaling
-        # if action_space is None:
-        #     self.action_scale = 1.
-        #     self.action_bias = 0.
-        # else:
-        #     self.action_scale = torch.FloatTensor(
-        #         (action_space.high - action_space.low) / 2.)
-        #     self.action_bias = torch.FloatTensor(
-        #         (action_space.high + action_space.low) / 2.)
+        # action rescaling
+        if action_space is None:
+            self.action_scale = 1.
+            self.action_bias = 0.
+        else:
+            self.action_scale = torch.FloatTensor(
+                (action_space.high - action_space.low) / 2.)
+            self.action_bias = torch.FloatTensor(
+                (action_space.high + action_space.low) / 2.)
 
     def forward(self, state):
         x = F.relu(self.linear1(state))
         x = F.relu(self.linear2(x))
-        x = F.relu(self.linear3(x))
         mean = torch.tanh(self.mean(x)) * self.action_scale + self.action_bias
         return mean
 
