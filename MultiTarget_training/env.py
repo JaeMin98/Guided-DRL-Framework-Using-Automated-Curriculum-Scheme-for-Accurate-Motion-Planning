@@ -193,9 +193,9 @@ class Ned2_control(object):
         
         self.Is_done = self.Is_success or self.IsLimited or self.Is_under_Z or self.Is_far_away or self.Is_timestep_over
 
-        rewardD = -1 * distance
-        rewardS = 100 if distance <= self.Is_success else 0
-        rewardL = -180 if self.IsLimited or self.Is_under_Z or self.Is_far_away else 0
+        rewardD = -2 * distance
+        rewardS = 10 if distance <= self.Is_success else 0
+        rewardL = -20 if self.IsLimited or self.Is_under_Z or self.Is_far_away else 0
 
         self.reward = rewardD + rewardS + rewardL
 
