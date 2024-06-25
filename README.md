@@ -30,7 +30,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ### 추가 프로그램 설치
         # GitHub Desktop 설치
-    https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1
+    [GitHub Desktop](https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1)
 
         # KVM 스위치 소프트웨어 (barrier) 설치
     sudo apt install barrier -y
@@ -39,12 +39,12 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     sudo apt-get install terminator
 
         # TeamViewer 설치
-    https://www.teamviewer.com/ko/download/linux/
+    [TeamViewer](https://www.teamviewer.com/ko/download/linux/)
     cd Download
     dpkg -i (package name)
 
         # VScode 설치
-    https://code.visualstudio.com/download
+    [VScode](https://code.visualstudio.com/download)
     cd Download
     dpkg -i (package name)
 
@@ -76,17 +76,17 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ### CUDA 설치(11.8 혹은 12.1 설치 권장)
         # CUDA 버전 선택 후 설치
-        # GPU Driver와 CUDA 버전 호환성 확인 : https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id4
+        # [GPU Driver와 CUDA 버전 호환성 확인](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id4)
     
     sudo apt install nvidia-cuda-toolkit
-    https://developer.nvidia.com/cuda-toolkit-archive
+    [CUDA 설치 가이드](https://developer.nvidia.com/cuda-toolkit-archive)
     
     nvcc -V
         # 만약 버전이 안나온다면 "bash 편의설정" 1 참조
     
 ### cuDNN 설치
-        # cuDNN 버전 호환성 확인 : https://en.wikipedia.org/wiki/CUDA#GPUs_supported
-    https://developer.nvidia.com/rdp/cudnn-archive
+        # [cuDNN 버전 호환성 확인](https://en.wikipedia.org/wiki/CUDA#GPUs_supported)
+    [cuDNN 설치 가이드](https://developer.nvidia.com/rdp/cudnn-archive)
 
 ### pytorch 설치
 [CUDA호환 pytorch 설치 가이드](https://pytorch.org/get-started/locally/)
