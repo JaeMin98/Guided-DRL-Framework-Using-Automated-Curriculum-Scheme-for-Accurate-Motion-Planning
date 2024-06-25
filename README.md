@@ -29,11 +29,9 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     sudo apt-get install python3-pip
 
 ### 추가 프로그램 설치
-[GitHub Desktop](https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1)
-
-[TeamViewer](https://www.teamviewer.com/ko/download/linux/)
-
-[VScode](https://code.visualstudio.com/download)
+[GitHub Desktop](https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1)<br/>
+[TeamViewer](https://www.teamviewer.com/ko/download/linux/)<br/>
+[VScode](https://code.visualstudio.com/download)<br/>
 
         # KVM 스위치 소프트웨어 (barrier) 설치
     sudo apt install barrier -y
@@ -77,11 +75,11 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
         # 만약 버전이 안나온다면 "bash 편의설정" 1 참조
     
 ### cuDNN 설치
-[cuDNN 버전 호환성 확인](https://en.wikipedia.org/wiki/CUDA#GPUs_supported)
+[cuDNN 버전 호환성 확인](https://en.wikipedia.org/wiki/CUDA#GPUs_supported)<br/>
 [cuDNN 설치 가이드](https://developer.nvidia.com/rdp/cudnn-archive)
 
 ### pytorch 설치
-[CUDA호환 pytorch 설치 가이드](https://pytorch.org/get-started/locally/)
+[CUDA호환 pytorch 설치 가이드](https://pytorch.org/get-started/locally/)<br/>
 아래 코드를 python으로 실행하여 CUDA와 cuDNN 인식 확인
     
     import torch
