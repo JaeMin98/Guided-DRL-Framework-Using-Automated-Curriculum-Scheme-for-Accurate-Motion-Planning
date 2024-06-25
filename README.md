@@ -30,7 +30,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ### 추가 프로그램 설치
         # GitHub Desktop 설치
-    [GitHub Desktop](https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1)
+[GitHub Desktop](https://gist.github.com/berkorbay/6feda478a00b0432d13f1fc0a50467f1)
 
         # KVM 스위치 소프트웨어 (barrier) 설치
     sudo apt install barrier -y
@@ -39,12 +39,14 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     sudo apt-get install terminator
 
         # TeamViewer 설치
-    [TeamViewer](https://www.teamviewer.com/ko/download/linux/)
+[TeamViewer](https://www.teamviewer.com/ko/download/linux/)
+
     cd Download
     dpkg -i (package name)
 
         # VScode 설치
-    [VScode](https://code.visualstudio.com/download)
+[VScode](https://code.visualstudio.com/download)
+
     cd Download
     dpkg -i (package name)
 
