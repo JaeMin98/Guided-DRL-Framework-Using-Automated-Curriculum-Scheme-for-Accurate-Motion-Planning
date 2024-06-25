@@ -82,17 +82,17 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 [CUDA호환 pytorch 설치 가이드](https://pytorch.org/get-started/locally/)<br/>
 아래 코드를 python으로 실행하여 CUDA와 cuDNN 인식 확인
 
-    ```python
-    import torch
+```python
+import torch
 
-    print(torch.cuda.is_available())
-    if torch.cuda.is_available():
-        print(torch.cuda.current_device())
-        print(torch.cuda.get_device_name(torch.cuda.current_device()))
+print(torch.cuda.is_available())
+if torch.cuda.is_available():
+    print(torch.cuda.current_device())
+    print(torch.cuda.get_device_name(torch.cuda.current_device()))
 
-    print(torch.backends.cudnn.enabled)
-    print(torch.backends.cudnn.version())
-    '''
+print(torch.backends.cudnn.enabled)
+print(torch.backends.cudnn.version())
+```
 ---------------------------------------------------------
 
 ## niryo ned2(robot arm) ROS pacakge 다운로드
