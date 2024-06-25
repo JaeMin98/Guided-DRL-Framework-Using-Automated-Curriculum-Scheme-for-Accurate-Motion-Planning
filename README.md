@@ -74,7 +74,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
         # 그래픽드라이버 설치 확인 및 추천 CUDA 버전 확인
     nvidia-smi
 
-### CUDA 설치
+### CUDA 설치(11.8 혹은 12.1 설치 권장)
         # CUDA 버전 선택 후 설치
         # GPU Driver와 CUDA 버전 호환성 확인 : https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#id4
     
@@ -87,6 +87,9 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 ### cuDNN 설치
         # cuDNN 버전 호환성 확인 : https://en.wikipedia.org/wiki/CUDA#GPUs_supported
     https://developer.nvidia.com/rdp/cudnn-archive
+
+### pytorch 설치
+    https://pytorch.org/get-started/locally/
 ---------------------------------------------------------
 
 ## niryo ned2(robot arm) ROS pacakge 다운로드
