@@ -177,5 +177,5 @@ alias rn='rosclean purge -y & roslaunch ned2_moveit demo_gazebo.launch'
 export ROS_MASTER_URI=http://(자신의 IP):(사용하고자하는 포트번호, default = 11311)
 # example) export ROS_MASTER_URI=http://192.168.0.121:11311
 export ROS_HOSTNAME=(자신의 IP)
-#example) export ROS_HOSTNAME=192.168.0.121
+# example) export ROS_HOSTNAME=192.168.0.121
 ```
