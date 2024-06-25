@@ -90,26 +90,23 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 ### pytorch 설치
 [CUDA호환 pytorch 설치 가이드](https://pytorch.org/get-started/locally/)
+아래 코드를 python으로 실행하여 CUDA와 cuDNN 인식 확인
     
     import torch
 
-    # CUDA 사용 가능 여부 확인
     print(torch.cuda.is_available())
-    
-    # 현재 CUDA 디바이스 번호 및 이름 확인
     if torch.cuda.is_available():
         print(torch.cuda.current_device())
         print(torch.cuda.get_device_name(torch.cuda.current_device()))
 
-    # cuDNN 사용 가능 여부 확인
     print(torch.backends.cudnn.enabled)
-    # cuDNN 버전 확인
     print(torch.backends.cudnn.version())
 ---------------------------------------------------------
 
 ## niryo ned2(robot arm) ROS pacakge 다운로드
 [ROS package 공유 링크](https://drive.google.com/file/d/1R_Lr5dDcLRc0oqfuJMkV8asckWMMeXkj/view?usp=sharing)
-    # 압축을 풀고 ~/catkin_ws/src에 넣고
+
+    # 압축을 풀고 ~/catkin_ws/src에 넣기
     cd ~/catkin_ws
     catkin_make
     source ./devel/setup.bash
@@ -117,9 +114,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
     roslaunch ned2_moveit demo_gazebo.launch
 ---------------------------------------------------------
 
-## bashrc 편의설정
-    gedit ~/.bashrc
-    
+## bashrc 편의설정( gedit ~/.bashrc )
         # 맨 아래에 원하는 라인을 추가
     
         # CUDA 경로 지정 (윈도우의 시스템 환경 변수와 같음)
