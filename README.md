@@ -69,7 +69,7 @@ sudo apt-get install terminator
 ### 🚮 기존에 설치된 그래픽 드라이버 제거
 
 ```bash
-sudo apt-get purge nvidia*
+sudo apt --purge remove *nvidia*
 sudo apt-get autoremove
 sudo apt-get autoclean
 sudo rm -rf /usr/local/cuda*
