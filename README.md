@@ -115,6 +115,14 @@ nvcc -V
 
 [cuDNN 설치 가이드](https://developer.nvidia.com/rdp/cudnn-archive)를 참고하십시오.
 
+```bash
+sudo apt update
+
+# 만약 에러 발생 시
+sudo rm /etc/apt/sources.list.d/cuda*
+sudo rm /etc/apt/sources.list.d/cudnn*
+```
+
 ### 🔥 PyTorch 설치
 
 [CUDA 호환 PyTorch 설치 가이드](https://pytorch.org/get-started/locally/)를 참고하여 설치합니다. 아래 코드를 실행하여 CUDA와 cuDNN 인식 여부를 확인합니다:
@@ -135,7 +143,7 @@ print(torch.backends.cudnn.version())
 
 ## 🦾 Niryo Ned2 (Robot Arm) ROS 패키지 다운로드
 
-[ROS 패키지 공유 링크](https://drive.google.com/file/d/1R_Lr5dDcLRc0oqfuJMkV8asckWMMeXkj/view?usp=sharing)에서 패키지를 다운로드합니다.
+[ROS 패키지 공유 링크](https://drive.google.com/file/d/1asuf5u0nxEIL4igmGXXH0zTojgIlM7af/view?usp=sharing)에서 패키지를 다운로드합니다.
 
 ```bash
 # 압축을 풀고 ~/catkin_ws/src에 넣기
