@@ -103,7 +103,7 @@ sudo apt install nvidia-cuda-toolkit
 ```
 
 [CUDA 설치 가이드](https://developer.nvidia.com/cuda-toolkit-archive)를 참고하여 설치합니다.<br/><br/>
-설치 옵션 중 "runfile (local)" 추천하며, runfile 다운로드 후 실행전 chmod 777 권한을 주고 실행 권장
+설치 옵션 중 "runfile (local)" 추천하며, runfile 다운로드 후 실행전 chmod 777 권한을 주고 실행하는 것을 권장합니다.
 
 ```bash
 nvcc -V
@@ -115,8 +115,7 @@ nvcc -V
 [cuDNN 버전 호환성 확인](https://en.wikipedia.org/wiki/CUDA#GPUs_supported) 후 설치합니다.
 
 [cuDNN 설치 가이드](https://developer.nvidia.com/rdp/cudnn-archive)를 참고하십시오.<br/><br/>
-"Local Installer for Ubuntu20.04 x86_64 (Deb)"과같은 deb형식의 파일 추천<br/><br/>
-설치 시 sudo dpkj -i로 설치할 것
+"Local Installer for Ubuntu20.04 x86_64 (Deb)"과같은 deb형식의 파일 추천
 
 ```bash
 sudo apt update
