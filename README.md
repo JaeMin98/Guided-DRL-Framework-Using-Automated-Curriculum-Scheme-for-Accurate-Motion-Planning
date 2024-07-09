@@ -125,7 +125,7 @@ sudo rm /etc/apt/sources.list.d/cuda*
 sudo rm /etc/apt/sources.list.d/cudnn*
 ```
 
-### 🔥 PyTorch 설치
+### 🔥 PyTorch 설치 (Python 3.9 이상 권장)
 
 [CUDA 호환 PyTorch 설치 가이드](https://pytorch.org/get-started/locally/)를 참고하여 설치합니다.<br/><br/>
 아래 코드를 실행하여 CUDA와 cuDNN 인식 여부를 확인합니다:
