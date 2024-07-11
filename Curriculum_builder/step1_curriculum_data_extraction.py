@@ -23,6 +23,7 @@ class Ned2_control(object):
         rospy.sleep(2)  # Wait for the Scene to fully load
         self.target = []
         self.Is_valid = True
+        self.prev_target = None
 
     def reset(self) -> None:
         self.move_group.go([0]*6, wait=True)
@@ -30,15 +31,21 @@ class Ned2_control(object):
         self.init_XYZ = self.get_pose()
 
     def reset_target(self) -> None:
-        while(1):
-            pose = self.move_group.get_random_pose()
-            x = pose.pose.position.x
-            y = pose.pose.position.y
-            z = pose.pose.position.z
-            self.target = [x,y,z]
-            if(z>0.05):
-                self.move_group.set_position_target(self.target)
-                break
+        if(self.prev_target == None):
+            while(1):
+                pose = self.move_group.get_random_pose()
+                x = pose.pose.position.x
+                y = pose.pose.position.y
+                z = pose.pose.position.z
+                self.target = [x,y,z]
+                if(z>0.05 and y >= 0):
+                    self.move_group.set_position_target(self.target)
+                    self.prev_target = self.target
+                    break
+        else:
+            self.target = [self.prev_target[0], -1 * self.prev_target[1], self.prev_target[2]]
+            self.move_group.set_position_target(self.target)
+            self.prev_target = None
             
     def action(self):
         start_time = rospy.get_time()
@@ -51,6 +58,7 @@ class Ned2_control(object):
 
         if(self.compare_lists(self.next_XYZ, self.target) > 0.01):
             self.Is_valid = False
+            self.prev_target = None
             print("Is_valid = False")
 
         return execution_time
