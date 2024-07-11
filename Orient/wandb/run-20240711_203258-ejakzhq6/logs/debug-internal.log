@@ -1,0 +1,215 @@
+2024-07-11 20:32:58,230 INFO    StreamThr :4600 [internal.py:wandb_internal():85] W&B internal server running at pid: 4600, started at: 2024-07-11 20:32:58.229555
+2024-07-11 20:32:58,232 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status
+2024-07-11 20:32:58,234 INFO    WriterThread:4600 [datastore.py:open_for_write():87] open: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/run-ejakzhq6.wandb
+2024-07-11 20:32:58,237 DEBUG   SenderThread:4600 [sender.py:send():379] send: header
+2024-07-11 20:32:58,246 DEBUG   SenderThread:4600 [sender.py:send():379] send: run
+2024-07-11 20:32:58,740 INFO    SenderThread:4600 [dir_watcher.py:__init__():211] watching files in: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files
+2024-07-11 20:32:58,741 INFO    SenderThread:4600 [sender.py:_start_run_threads():1188] run started: ejakzhq6 with start time 1720697578.229519
+2024-07-11 20:32:58,760 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: check_version
+2024-07-11 20:32:58,761 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: check_version
+2024-07-11 20:32:58,826 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: run_start
+2024-07-11 20:32:58,859 DEBUG   HandlerThread:4600 [system_info.py:__init__():26] System info init
+2024-07-11 20:32:58,859 DEBUG   HandlerThread:4600 [system_info.py:__init__():41] System info init done
+2024-07-11 20:32:58,859 INFO    HandlerThread:4600 [system_monitor.py:start():194] Starting system monitor
+2024-07-11 20:32:58,860 INFO    HandlerThread:4600 [system_monitor.py:probe():214] Collecting system info
+2024-07-11 20:32:58,860 INFO    SystemMonitor:4600 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-11 20:32:58,860 INFO    SystemMonitor:4600 [interfaces.py:start():188] Started cpu monitoring
+2024-07-11 20:32:58,861 INFO    SystemMonitor:4600 [interfaces.py:start():188] Started disk monitoring
+2024-07-11 20:32:58,862 INFO    SystemMonitor:4600 [interfaces.py:start():188] Started gpu monitoring
+2024-07-11 20:32:58,862 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:32:58,863 INFO    SystemMonitor:4600 [interfaces.py:start():188] Started memory monitoring
+2024-07-11 20:32:58,863 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:32:58,864 INFO    SystemMonitor:4600 [interfaces.py:start():188] Started network monitoring
+2024-07-11 20:32:59,210 DEBUG   HandlerThread:4600 [system_info.py:probe():152] Probing system
+2024-07-11 20:32:59,216 DEBUG   HandlerThread:4600 [system_info.py:_probe_git():137] Probing git
+2024-07-11 20:32:59,225 DEBUG   HandlerThread:4600 [system_info.py:_probe_git():145] Probing git done
+2024-07-11 20:32:59,225 DEBUG   HandlerThread:4600 [system_info.py:probe():200] Probing system done
+2024-07-11 20:32:59,225 DEBUG   HandlerThread:4600 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-113-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-07-11T11:32:59.210788', 'startedAt': '2024-07-11T11:32:58.220081', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/smartcps/catkin_ws/src/my_package/github/Main/Orient/Run_Training.py', 'codePathLocal': 'Run_Training.py', 'codePath': 'Orient/Run_Training.py', 'git': {'remote': 'https://github.com/JaeMin98/Guided-DRL-Framework-Using-Automated-Curriculum-Scheme-for-Accurate-Motion-Planning.git', 'commit': '7014b8c65aefac4b15b657b75d2e7befea4523e5'}, 'email': '81763871+JaeMin98@users.noreply.github.com', 'root': '/home/smartcps/catkin_ws/src/my_package/github/Main', 'host': 'smartcps', 'username': 'smartcps', 'executable': '/bin/python3', 'cpu_count': 12, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1078.3264, 'min': 800.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 1074.259, 'min': 800.0, 'max': 4900.0}, {'current': 1008.618, 'min': 800.0, 'max': 4900.0}, {'current': 1094.352, 'min': 800.0, 'max': 4900.0}, {'current': 1058.41, 'min': 800.0, 'max': 4900.0}, {'current': 1046.17, 'min': 800.0, 'max': 4900.0}, {'current': 1061.769, 'min': 800.0, 'max': 4900.0}, {'current': 1108.307, 'min': 800.0, 'max': 4900.0}, {'current': 1137.45, 'min': 800.0, 'max': 4900.0}, {'current': 1095.05, 'min': 800.0, 'max': 5000.0}, {'current': 1102.449, 'min': 800.0, 'max': 5000.0}, {'current': 1148.206, 'min': 800.0, 'max': 5000.0}, {'current': 1221.081, 'min': 800.0, 'max': 5000.0}, {'current': 1178.729, 'min': 800.0, 'max': 4900.0}, {'current': 1116.813, 'min': 800.0, 'max': 4900.0}, {'current': 1227.743, 'min': 800.0, 'max': 4900.0}, {'current': 1298.63, 'min': 800.0, 'max': 4900.0}, {'current': 932.875, 'min': 800.0, 'max': 3800.0}, {'current': 931.424, 'min': 800.0, 'max': 3800.0}, {'current': 1092.435, 'min': 800.0, 'max': 3800.0}, {'current': 1069.363, 'min': 800.0, 'max': 3800.0}], 'disk': {'/': {'total': 479.5502014160156, 'used': 22.260242462158203}}, 'gpu': 'NVIDIA GeForce RTX 4070 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Ti', 'memory_total': 12878610432}], 'memory': {'total': 31.15371322631836}}
+2024-07-11 20:32:59,225 INFO    HandlerThread:4600 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-11 20:32:59,225 INFO    HandlerThread:4600 [system_monitor.py:probe():227] Publishing system info
+2024-07-11 20:32:59,225 DEBUG   HandlerThread:4600 [system_info.py:_save_code():44] Saving code
+2024-07-11 20:32:59,228 DEBUG   HandlerThread:4600 [system_info.py:_save_code():67] Saving code done
+2024-07-11 20:32:59,228 DEBUG   HandlerThread:4600 [system_info.py:_save_patches():84] Saving git patches
+2024-07-11 20:32:59,374 DEBUG   HandlerThread:4600 [system_info.py:_save_patches():126] Saving git patches done
+2024-07-11 20:32:59,378 INFO    HandlerThread:4600 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-11 20:32:59,383 DEBUG   SenderThread:4600 [sender.py:send():379] send: files
+2024-07-11 20:32:59,383 INFO    SenderThread:4600 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-11 20:32:59,384 INFO    SenderThread:4600 [sender.py:_save_file():1454] saving file code/Orient/Run_Training.py with policy now
+2024-07-11 20:32:59,384 INFO    SenderThread:4600 [sender.py:_save_file():1454] saving file diff.patch with policy now
+2024-07-11 20:32:59,622 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-11 20:32:59,622 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: python_packages
+2024-07-11 20:32:59,623 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 20:32:59,623 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 20:32:59,629 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:32:59,741 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/requirements.txt
+2024-07-11 20:32:59,741 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/code/Orient/Run_Training.py
+2024-07-11 20:32:59,741 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/wandb-metadata.json
+2024-07-11 20:32:59,741 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/diff.patch
+2024-07-11 20:32:59,741 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/code
+2024-07-11 20:32:59,741 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/code/Orient
+2024-07-11 20:32:59,928 DEBUG   SenderThread:4600 [sender.py:send():379] send: telemetry
+2024-07-11 20:32:59,928 DEBUG   SenderThread:4600 [sender.py:send():379] send: telemetry
+2024-07-11 20:32:59,928 DEBUG   SenderThread:4600 [sender.py:send():379] send: run
+2024-07-11 20:33:00,101 INFO    wandb-upload_0:4600 [upload_job.py:push():130] Uploaded file /tmp/tmpei_xd3sqwandb/kmdmae00-wandb-metadata.json
+2024-07-11 20:33:00,130 INFO    SenderThread:4600 [sender.py:send_run():1035] updated run: ejakzhq6
+2024-07-11 20:33:00,130 DEBUG   SenderThread:4600 [sender.py:send():379] send: telemetry
+2024-07-11 20:33:00,162 INFO    wandb-upload_1:4600 [upload_job.py:push():130] Uploaded file /tmp/tmpei_xd3sqwandb/zaofc135-code/Orient/Run_Training.py
+2024-07-11 20:33:00,645 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:00,738 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/config.yaml
+2024-07-11 20:33:00,739 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/output.log
+2024-07-11 20:33:00,864 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:00,865 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:01,526 INFO    wandb-upload_2:4600 [upload_job.py:push():130] Uploaded file /tmp/tmpei_xd3sqwandb/xvi2r3jh-diff.patch
+2024-07-11 20:33:01,645 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:02,644 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:02,739 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/output.log
+2024-07-11 20:33:02,866 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:02,866 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:03,645 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:04,132 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:04,645 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:04,869 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:04,870 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:05,646 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:06,646 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:06,872 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:06,873 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:07,646 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:08,645 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:08,874 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:08,875 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:09,625 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:09,646 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:10,647 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:10,875 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:10,876 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:11,649 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:12,653 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:12,877 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:12,877 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:13,649 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:14,624 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 20:33:14,624 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 20:33:14,665 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:14,877 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:14,878 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:14,908 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:15,649 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:16,650 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:16,880 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:16,881 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:17,650 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:18,278 DEBUG   SenderThread:4600 [sender.py:send():379] send: telemetry
+2024-07-11 20:33:18,320 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:18,321 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:18,321 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:18,337 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:18,337 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:18,649 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:18,882 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:18,882 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:19,650 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:20,627 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:20,650 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:20,753 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/output.log
+2024-07-11 20:33:20,882 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:20,882 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:21,651 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:22,650 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:22,887 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:22,889 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:23,651 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:24,650 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:24,890 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:24,890 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:25,627 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:25,657 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:26,652 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:26,891 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:26,891 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:27,652 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:28,653 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:28,892 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:28,893 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:29,624 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 20:33:29,625 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 20:33:29,668 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:30,652 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:30,893 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:30,893 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:30,921 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:31,653 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:31,760 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/config.yaml
+2024-07-11 20:33:32,655 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:32,894 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:32,895 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:33,653 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:34,149 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:34,151 DEBUG   SenderThread:4600 [sender.py:send():379] send: history
+2024-07-11 20:33:34,151 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 20:33:34,153 INFO    SenderThread:4600 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 20:33:34,196 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:34,196 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:34,208 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:34,209 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:34,655 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:34,761 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/output.log
+2024-07-11 20:33:34,762 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_created():271] file/dir created: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/wandb-summary.json
+2024-07-11 20:33:34,895 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:34,895 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:35,657 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:36,631 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:36,656 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:36,896 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:36,896 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:37,657 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:38,656 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:38,897 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:38,897 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:39,658 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:40,657 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:40,898 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:40,898 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:41,657 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:42,630 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:42,658 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:42,899 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:42,899 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:43,658 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:44,623 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-11 20:33:44,624 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: stop_status
+2024-07-11 20:33:44,664 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:44,901 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:44,902 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:45,658 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:46,663 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:46,903 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:46,903 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:47,661 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:47,921 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:48,661 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:48,904 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:48,905 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:49,660 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:49,836 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:49,837 DEBUG   SenderThread:4600 [sender.py:send():379] send: history
+2024-07-11 20:33:49,837 DEBUG   SenderThread:4600 [sender.py:send_request():406] send_request: summary_record
+2024-07-11 20:33:49,840 INFO    SenderThread:4600 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-11 20:33:49,876 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:49,877 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:49,894 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:49,894 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-11 20:33:50,662 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:50,771 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/wandb-summary.json
+2024-07-11 20:33:50,773 INFO    Thread-17 :4600 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/smartcps/catkin_ws/src/my_package/github/Main/Orient/wandb/run-20240711_203258-ejakzhq6/files/output.log
+2024-07-11 20:33:50,906 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:50,907 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:51,664 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:52,663 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:52,907 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:52,907 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:53,663 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:53,878 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: status_report
+2024-07-11 20:33:54,664 DEBUG   HandlerThread:4600 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-11 20:33:54,908 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'
+2024-07-11 20:33:54,909 ERROR   disk      :4600 [interfaces.py:monitor():142] Failed to sample metric: not sure how to interpret line '   7       0 loop0 14 0 34 0 0 0 0 0 0 12 0 0 0 0 0 0 0\n'

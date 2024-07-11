@@ -1,0 +1,148 @@
+{
+    "os": "Linux-5.15.0-113-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-07-11T11:48:43.257870",
+    "startedAt": "2024-07-11T11:48:42.262062",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/smartcps/catkin_ws/src/my_package/github/Main/Orient/Run_Training.py",
+    "codePathLocal": "Run_Training.py",
+    "codePath": "Orient/Run_Training.py",
+    "git": {
+        "remote": "https://github.com/JaeMin98/Guided-DRL-Framework-Using-Automated-Curriculum-Scheme-for-Accurate-Motion-Planning.git",
+        "commit": "7014b8c65aefac4b15b657b75d2e7befea4523e5"
+    },
+    "email": "81763871+JaeMin98@users.noreply.github.com",
+    "root": "/home/smartcps/catkin_ws/src/my_package/github/Main",
+    "host": "smartcps",
+    "username": "smartcps",
+    "executable": "/bin/python3",
+    "cpu_count": 12,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1176.5954500000003,
+        "min": 800.0,
+        "max": 4700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1075.363,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1139.678,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1080.556,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1135.051,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1106.122,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1099.289,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1150.221,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1112.894,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1163.218,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 1147.393,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 1225.684,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 1071.583,
+            "min": 800.0,
+            "max": 5000.0
+        },
+        {
+            "current": 1085.501,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1047.918,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1091.615,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 1088.927,
+            "min": 800.0,
+            "max": 4900.0
+        },
+        {
+            "current": 939.541,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 912.078,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 893.191,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 909.953,
+            "min": 800.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 479.5502014160156,
+            "used": 22.265853881835938
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070 Ti",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 31.15371322631836
+    }
+}
