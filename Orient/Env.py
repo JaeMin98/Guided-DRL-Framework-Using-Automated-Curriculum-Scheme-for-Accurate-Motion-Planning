@@ -90,9 +90,9 @@ class Ned2_control(object):
         self.weight = [6.8,
                         3,
                         3.32,
-                        9.6,
-                        8.8,
-                        11.6]
+                        4.8,
+                        4.4,
+                        5.8]
             
 
         ## reward weight ##

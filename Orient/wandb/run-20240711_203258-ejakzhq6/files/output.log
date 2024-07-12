@@ -1,4 +1,0 @@
-
-[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
-Current_Level: 0, Episode: 1, total numsteps: 200, episode steps: 200, reward: -403.19, Replay Memory length: 200
-Current_Level: 0, Episode: 2, total numsteps: 400, episode steps: 200, reward: -399.23, Replay Memory length: 400
