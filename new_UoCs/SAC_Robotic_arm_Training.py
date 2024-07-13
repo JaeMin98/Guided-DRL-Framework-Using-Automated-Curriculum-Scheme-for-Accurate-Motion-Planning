@@ -170,7 +170,7 @@ if __name__ == '__main__':
         Config.Current_Data_Selection_Ratio = 0.6
 
         wandb.init(project='New_UoCs')
-        wandb.run.name = f'SAC_Robotic_Arm_{1.0-Config.Current_Data_Selection_Ratio}'
+        wandb.run.name = f'SAC_Robotic_Arm_{round(1.0-Config.Current_Data_Selection_Ratio,1)}'
         wandb.run.save()
 
         Run_Training()
