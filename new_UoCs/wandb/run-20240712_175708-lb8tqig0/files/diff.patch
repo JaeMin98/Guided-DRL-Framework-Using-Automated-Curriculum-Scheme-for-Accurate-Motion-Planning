@@ -1,0 +1,16 @@
+diff --git a/new_UoCs/Env.py b/new_UoCs/Env.py
+index 81d81b7..c69753a 100644
+--- a/new_UoCs/Env.py
++++ b/new_UoCs/Env.py
+@@ -16,11 +16,6 @@ import Config
+ 
+ # alpha shape #
+ import math
+-import numpy as np
+-from descartes import PolygonPatch
+-import matplotlib.pyplot as plt
+-import alphashape
+-from shapely.geometry import Point
+ import csv
+ # alpha shape #
+ 

@@ -16,11 +16,6 @@ import Config
 
 # alpha shape #
 import math
-import numpy as np
-from descartes import PolygonPatch
-import matplotlib.pyplot as plt
-import alphashape
-from shapely.geometry import Point
 import csv
 # alpha shape #
 

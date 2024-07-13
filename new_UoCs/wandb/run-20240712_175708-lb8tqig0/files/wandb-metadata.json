@@ -1,0 +1,148 @@
+{
+    "os": "Linux-5.15.0-113-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-07-12T08:57:11.304730",
+    "startedAt": "2024-07-12T08:57:08.314744",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/smartcps/catkin_ws/src/my_package/Paper/new_UoCs/SAC_Robotic_arm_Training.py",
+    "codePathLocal": "SAC_Robotic_arm_Training.py",
+    "codePath": "new_UoCs/SAC_Robotic_arm_Training.py",
+    "git": {
+        "remote": "https://github.com/JaeMin98/Guided-DRL-Framework-Using-Automated-Curriculum-Scheme-for-Accurate-Motion-Planning.git",
+        "commit": "8c69a54bf745bb5bd1f73f64676d66716e6c4e66"
+    },
+    "email": "81763871+JaeMin98@users.noreply.github.com",
+    "root": "/home/smartcps/catkin_ws/src/my_package/Paper",
+    "host": "smartcps",
+    "username": "smartcps",
+    "executable": "/bin/python3",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 4900.00045,
+        "min": 800.0,
+        "max": 5300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4899.998,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.009,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.004,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.993,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.998,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.001,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.003,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.005,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.993,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.995,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.001,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.049,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.007,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.994,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.997,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.0,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.997,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4900.004,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.996,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4899.987,
+            "min": 800.0,
+            "max": 5300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 479.5502014160156,
+            "used": 21.931865692138672
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 62.68873596191406
+    }
+}

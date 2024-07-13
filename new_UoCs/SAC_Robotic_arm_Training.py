@@ -14,7 +14,7 @@ import csv
 import wandb
 
 wandb.init(project='New_UoCs')
-wandb.run.name = 'SAC_Robotic_Arm'
+wandb.run.name = f'SAC_Robotic_Arm_{1.0-Config.Current_Data_Selection_Ratio}'
 wandb.run.save()
 
 def Run_Training():
