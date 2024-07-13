@@ -1,9 +1,3 @@
-/Curriculum_builder/__pycache__
-
-/MultiTarget_training/__pycache__
-/MultiTarget_training/wandb
-/MultiTarget_training/models
-
-/SingleTarget_training/__pycache__
-/SingleTarget_training/wandb
-/SingleTarget_training/models
+/__pycache__/
+/wandb/
+/models/
