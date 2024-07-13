@@ -13,9 +13,6 @@ import gc
 import csv
 import wandb
 
-wandb.init(project='New_UoCs')
-wandb.run.name = f'SAC_Robotic_Arm_{1.0-Config.Current_Data_Selection_Ratio}'
-wandb.run.save()
 
 def Run_Training():
     # 가비지 컬렉터 활성화
@@ -168,4 +165,12 @@ def Run_Training():
 
 
 if __name__ == '__main__':
-    Run_Training()
+
+    for i in range(3):
+        Config.Current_Data_Selection_Ratio = 0.8
+
+        wandb.init(project='New_UoCs')
+        wandb.run.name = f'SAC_Robotic_Arm_{1.0-Config.Current_Data_Selection_Ratio}'
+        wandb.run.save()
+
+        Run_Training()
