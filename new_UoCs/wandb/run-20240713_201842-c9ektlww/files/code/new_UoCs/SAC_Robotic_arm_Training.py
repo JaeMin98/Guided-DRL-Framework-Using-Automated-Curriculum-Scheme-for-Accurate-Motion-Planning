@@ -84,7 +84,7 @@ def Run_Training():
                 episode_success.append(success)
                 episode_success_csv_data_list.append([success,len(memory),total_numsteps,env.Level_Of_Point])
 
-                success_rate = np.sum(episode_success[-min(10, len(episode_success)):])/10.0
+                success_rate = np.mean(episode_success[-min(10, len(episode_success)):])
                 success_rate_list.append(success_rate)
 
                 # 저장 경로 확인
@@ -99,7 +99,7 @@ def Run_Training():
                 }, "./models/" + folderName + "/model_"+str(i_episode)+".tar")
 
                 if(len(success_rate_list) > 4):
-                    if (np.sum(success_rate_list[-min(5, len(success_rate_list)):])/5.0) >= Config.Success_Standard:
+                    if np.mean(success_rate_list[-min(5, len(success_rate_list)):]) >= Config.Success_Standard:
                         if not(env.Level_Of_Point >= env.MAX_Level_Of_Point):
                             episode_success = []
                             success_rate_list = []
