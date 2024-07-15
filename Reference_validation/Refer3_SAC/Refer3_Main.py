@@ -49,7 +49,7 @@ def run(max_t=200, evaluate=True):
     env = Env.Ned2_control()
     agent = SAC(12, 3, Config)
 
-    checkpoint = torch.load('./Reference_models/Refer3/Refer3.tar', map_location=lambda storage, loc: storage)
+    checkpoint = torch.load('./Reference_models/Refer3_2/model_28392.tar', map_location=lambda storage, loc: storage)
     agent.policy.load_state_dict(checkpoint['model'])
     agent.policy.eval()
 

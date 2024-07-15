@@ -19,6 +19,6 @@ def process_refer(path, module_name, csv_filename):
     successrate_each_UoCs = calculate_success_rate(success_each_UoCs)
     save_csv(csv_filename, [[sr] for sr in successrate_each_UoCs])
 
-process_refer('./Refer1_DDPG', 'Refer1_Main', 'Refer1.csv')
+# process_refer('./Refer1_DDPG', 'Refer1_Main', 'Refer1.csv')
 # process_refer('./Refer2_DDPG', 'Refer2_Main', 'Refer2.csv')
-# process_refer('./Refer3_SAC', 'Refer3_Main', 'Refer3.csv')
+process_refer('./Refer3_SAC', 'Refer3_Main', 'Refer3.csv')
