@@ -167,7 +167,7 @@ def Run_Training():
 if __name__ == '__main__':
 
     for i in range(3):
-        Config.Current_Data_Selection_Ratio = 0.6
+        Config.Current_Data_Selection_Ratio = 0.5
 
         wandb.init(project='New_UoCs')
         wandb.run.name = f'SAC_Robotic_Arm_{round(1.0-Config.Current_Data_Selection_Ratio,1)}'
