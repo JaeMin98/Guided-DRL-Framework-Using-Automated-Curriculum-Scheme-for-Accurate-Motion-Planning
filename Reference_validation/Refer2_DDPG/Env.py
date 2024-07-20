@@ -98,7 +98,11 @@ class Ned2_control(object):
         self.prev_distance = None
         self.isLimited = False
         self.move_group.go([0,0,0,0,0,0], wait=True)
+        self.move_group.stop()
+        self.move_group.go([0,0,0,0,0,0], wait=True)
+        self.move_group.stop()
         self.target_reset()
+        print('reset')
         
     
     def get_endeffector_position(self):
@@ -108,7 +112,8 @@ class Ned2_control(object):
     
     def get_state(self):
         joint = self.move_group.get_current_joint_values()
-        state = joint[0:3] + self.get_endeffector_position() + self.target
+        state = joint[0:3] + self.target
+        # state = joint[0:3] + self.get_endeffector_position() + self.target
         return state
 
     def get_reward(self):

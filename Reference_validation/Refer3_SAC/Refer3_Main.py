@@ -45,11 +45,11 @@ def load_curriculum():
 
     return level_point
 
-def run(max_t=200, evaluate=True):
+def run(model_name, max_t=200, evaluate=True):
     env = Env.Ned2_control()
     agent = SAC(12, 3, Config)
 
-    checkpoint = torch.load('./Reference_models/Refer3_2/model_28392.tar', map_location=lambda storage, loc: storage)
+    checkpoint = torch.load(model_name, map_location=lambda storage, loc: storage)
     agent.policy.load_state_dict(checkpoint['model'])
     agent.policy.eval()
 

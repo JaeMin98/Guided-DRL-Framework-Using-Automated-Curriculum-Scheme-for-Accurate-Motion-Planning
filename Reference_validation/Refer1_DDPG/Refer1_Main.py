@@ -43,18 +43,17 @@ def load_curriculum():
 
     return level_point
 
-def run(max_t=200, evaluate=True):
+def run(model_name, max_t=200, evaluate=True):
     if(evaluate) : add_noise = False
     else : add_noise = True
 
     env = Env.Ned2_control()
     agent = Agent(state_size=15, action_size=3, random_seed=123456)
 
-    agent.actor_local.load_state_dict(torch.load('./Reference_models/Refer1/39994_actor.pth'))
-    agent.critic_local.load_state_dict(torch.load('./Reference_models/Refer1/39994_critic.pth'))
-
-    # agent.actor_local.load_state_dict(torch.load('./Reference_models/Refer2_2/actor_solved.pth'))
-    # agent.critic_local.load_state_dict(torch.load('./Reference_models/Refer2_2/critic_solved.pth'))
+    actor_model_path = model_name+"-actor.pth"
+    critic_model_path = model_name+"-critic.pth"
+    agent.actor_local.load_state_dict(torch.load(actor_model_path))
+    agent.critic_local.load_state_dict(torch.load(critic_model_path))
 
     level_point = load_curriculum()
 

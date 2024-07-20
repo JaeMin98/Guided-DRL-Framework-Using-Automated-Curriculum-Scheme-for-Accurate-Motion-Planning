@@ -134,6 +134,9 @@ class Ned2_control(object):
         self.time_step = 0
         self.isLimited = False
         self.move_group.go([0,0,0,0,0,0], wait=True)
+        self.move_group.stop()
+        self.move_group.go([0,0,0,0,0,0], wait=True)
+        self.move_group.stop()
         self.target_reset()
         
     def get_joint2_position(self):

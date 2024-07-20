@@ -138,6 +138,9 @@ class Ned2_control(object):
         self.Negative_DF = 1.01
         self.Positive_DF = 0.99
         self.move_group.go([0,0,0,0,0,0], wait=True)
+        self.move_group.stop()
+        self.move_group.go([0,0,0,0,0,0], wait=True)
+        self.move_group.stop()
         self.target_reset()
         
 
