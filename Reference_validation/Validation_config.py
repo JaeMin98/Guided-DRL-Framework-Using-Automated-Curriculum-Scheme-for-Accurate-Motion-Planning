@@ -1,2 +1,2 @@
-iteration_per_UoC = 1000
+iteration_per_UoC = 100
 Num_of_UoC = 5
