@@ -30,13 +30,11 @@ def process_refer(path, module_name, model_name, csv_filename):
 # models = ['Reference_models/Refer2_1/Refer2.1',
 #           'Reference_models/Refer2_1/Refer2.2',
 #           'Reference_models/Refer2_2/Refer2']
-models = ['Reference_models/Refer2_2/Refer2']
-
-for model_name in models :
-    process_refer('./Refer2_DDPG', 'Refer2_Main', model_name, f'{model_name}.csv')
-
-
-# models = ['Reference_models/Refer3_1/Refer3.tar',
-#           'Reference_models/Refer3_2/Refer3.tar']
 # for model_name in models :
-#     process_refer('./Refer3_SAC', 'Refer3_Main', model_name, f'{model_name}.csv')
+#     process_refer('./Refer2_DDPG', 'Refer2_Main', model_name, f'{model_name}.csv')
+
+
+models = ['Reference_models/Refer3_algorithm8/Refer3_algorithm8_1.tar.tar',
+          'Reference_models/Refer3_algorithm8/Refer3_algorithm8_4.tar.tar']
+for model_name in models :
+    process_refer('./Refer3_SAC', 'Refer3_Main', model_name, f'{model_name}.csv')
