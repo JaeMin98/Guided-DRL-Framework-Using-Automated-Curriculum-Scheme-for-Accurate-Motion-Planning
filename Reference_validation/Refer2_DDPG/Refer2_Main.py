@@ -51,15 +51,15 @@ def run(model_name, max_t=200, evaluate = True):
     try:
         agent = Agent(state_size=9, action_size=3, random_seed=123456)
 
-        actor_model_path = model_name+"-actor.pth"
-        critic_model_path = model_name+"-critic.pth"
+        actor_model_path = model_name+"_actor.pth"
+        critic_model_path = model_name+"_critic.pth"
         agent.actor_local.load_state_dict(torch.load(actor_model_path))
         agent.critic_local.load_state_dict(torch.load(critic_model_path))
     except:
         agent = Agent(state_size=6, action_size=3, random_seed=123456)
 
-        actor_model_path = model_name+"-actor.pth"
-        critic_model_path = model_name+"-critic.pth"
+        actor_model_path = model_name+"_actor.pth"
+        critic_model_path = model_name+"_critic.pth"
         agent.actor_local.load_state_dict(torch.load(actor_model_path))
         agent.critic_local.load_state_dict(torch.load(critic_model_path))
         
