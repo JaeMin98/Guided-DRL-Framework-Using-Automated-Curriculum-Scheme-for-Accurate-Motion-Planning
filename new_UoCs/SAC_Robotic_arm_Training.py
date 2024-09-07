@@ -18,11 +18,11 @@ def Run_Training():
     # 가비지 컬렉터 활성화
     gc.enable()
     # Environment
-    env = Env.Ned2_control()
+    env = Env.RobotArmControl()
     env.reset()
 
     # Agent
-    agent = SAC(12, 3, Config)
+    agent = SAC(9, 3, Config)
 
     # Memory
     memory = ReplayMemory(Config.replay_size, Config.seed)
@@ -167,10 +167,11 @@ def Run_Training():
 if __name__ == '__main__':
 
     for i in range(3):
-        Config.Current_Data_Selection_Ratio = 0.5
+        Config.Current_Data_Selection_Ratio = 0.8
 
-        wandb.init(project='New_UoCs')
-        wandb.run.name = f'SAC_Robotic_Arm_{round(1.0-Config.Current_Data_Selection_Ratio,1)}'
+        Config.time_sleep_interval = 0.05
+        wandb.init(project='H2017')
+        wandb.run.name = f'SAC_Robotic_Arm_{round(1.0-Config.Current_Data_Selection_Ratio,1)}_time_{Config.time_sleep_interval}'
         wandb.run.save()
 
         Run_Training()

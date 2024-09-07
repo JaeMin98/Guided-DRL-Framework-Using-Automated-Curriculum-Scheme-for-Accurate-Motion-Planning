@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-env_name = 'ned2'
+env_name = 'H2017'
 policy = "Gaussian"
 
 eval = True
@@ -24,8 +24,8 @@ Success_Standard = 0.9
 num_steps = 10000001
 batch_size = 4096
 start_steps = 10000
-max_episode_steps = 256
-time_sleep_interval = 0.05
+max_episode_steps = 200
+time_sleep_interval = 0.8
 
 isExit_IfSuccessLearning = False #목표 달성 시(success rate 0.9이상일 때) 학습을 종료할 것인지
 

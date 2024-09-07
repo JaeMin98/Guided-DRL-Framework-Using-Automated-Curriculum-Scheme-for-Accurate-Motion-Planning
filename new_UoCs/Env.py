@@ -8,6 +8,7 @@ import geometry_msgs.msg
 import random
 import math
 from moveit_commander.conversions import pose_to_list
+from moveit_commander import PlanningSceneInterface, RobotCommander, MoveGroupCommander
 from gazebo_msgs.msg import ModelState 
 from gazebo_msgs.srv import SetModelState
 import os
@@ -19,20 +20,17 @@ import math
 import csv
 # alpha shape #
 
-class Ned2_control(object):
+class RobotArmControl:
     def __init__(self):
-        super(Ned2_control, self).__init__()
         moveit_commander.roscpp_initialize(sys.argv)
         rospy.init_node('move_group_python_interface', anonymous=True)
-        group_name = "ned2" #moveit의 move_group name >> moveit assitant로 패키지 생성 시 정의
-        move_group = moveit_commander.MoveGroupCommander(group_name) # move_group node로 동작을 계획하고,  실행 
+        self.move_group = MoveGroupCommander("h2017")
+        rospy.loginfo("RobotArmControl initialized successfully")
         
-        self.move_group = move_group
-
         # CSV 파일 열기
         self.level_point = []
         for i in range(1,6):
-            with open('./DataCSV/level_'+str(i)+'.csv', 'r') as file:
+            with open('./DataCSV/UoC_'+str(i)+'.csv', 'r') as file:
                 reader = csv.reader(file)
 
                 # 각 행들을 저장할 리스트 생성
@@ -43,11 +41,6 @@ class Ned2_control(object):
                     rows.append(row_temp)
                 self.level_point.append(rows)
 
-        # Level 3,4 바꾸기
-        CSV_change = self.level_point[2]
-        self.level_point[2] = self.level_point[3]
-        self.level_point[3] = CSV_change
-
         self.MAX_Level_Of_Point = 4
         self.Level_Of_Point = 0
 
@@ -57,12 +50,12 @@ class Ned2_control(object):
         self.rotation_target = 0
 
         self.isLimited = False 
-        self.Limit_joint=[[-171.88,171.88],
-                            [-105.0,34.96],
-                            [-76.78,89.96],
-                            [-119.75,119.75],
-                            [-110.01,110.17],
-                            [-144.96,144.96]]
+        self.Limit_joint=[[-180.0, 180.0],
+                            [-110.0,110.0],
+                            [-140.0,140.0],
+                            [-0.1,0.1],
+                            [-0.1,0.1],
+                            [-0.1,0.1]]
 
         
 
@@ -75,12 +68,12 @@ class Ned2_control(object):
                             3,
                             4]
         else:
-            self.weight = [6.8,
-                            3,
-                            3.32,
-                            4.8,
-                            4.4,
-                            5.8]
+            self.weight = [3.6,
+                            2.2,
+                            2.8,
+                            0.0,
+                            0.0,
+                            0.0]
             
 
         ## reward weight ##
@@ -90,14 +83,14 @@ class Ned2_control(object):
         self.Negative_DF = 1.01
         self.Positive_DF = 0.99
 
-        self.start_GD = 0.04
-        self.limit_GD = 0.02
+        self.start_GD = 0.05
+        self.limit_GD = 0.05
         self.count_complete = 0
         self.goalDistance = self.start_GD
 
         self.Discount_count = 0
 
-        self.farDistance = 0.999
+        self.farDistance = 2.999
 
         self.prev_state = []
         self.joint_error_count = 0
@@ -125,9 +118,9 @@ class Ned2_control(object):
         self.job_list.append(joint)
         # self.prev_action = copy.deepcopy(joint)
 
-        joint[0] += angle[0] * self.weight[0]
-        joint[1] += angle[1] * self.weight[1]
-        joint[2] += angle[2] * self.weight[2]
+        joint[0] += angle[0] * 10
+        joint[1] += angle[1] * 10
+        joint[2] += angle[2] * 10
         joint[3] = 0
         joint[4] = 0
         joint[5] = 0
@@ -149,17 +142,6 @@ class Ned2_control(object):
             self.isLimited = True
 
         self.time_step += 1
-
-    def ikaction(self):
-        print("hiru")
-        pose_goal = geometry_msgs.msg.Pose()
-        pose_goal.position.x = 0.2
-        pose_goal.position.y = 0.3
-        pose_goal.position.z = 0.4 #static
-
-        self.move_group.set_pose_target(pose_goal)
-        self.move_group.go(wait=True)
-        self.move_group.stop()
             
     def reset(self):
         # print("Go To Home pose")
@@ -185,8 +167,8 @@ class Ned2_control(object):
 
     def get_state(self): #joint 6축 각도
         joint = self.move_group.get_current_joint_values()
-        state = self.Radian_to_Degree(joint) + self.target + self.get_pose()
-        if(len(state) == 12):
+        state = self.Radian_to_Degree(joint)[0:3] + self.target + self.get_pose()
+        if(len(state) == 9):
             self.prev_state = state
         else:
             state = self.prev_state
@@ -216,11 +198,11 @@ class Ned2_control(object):
             # print("OUT OF (time_step), ", self.time_step)
             isFinished = True
         
-        if not(0.1< end_effector[2] < 0.8):
-            # print("OUT OF (end_effector), Z : ", end_effector[2])
-            # self.move_group.stop()
-            # self.move_group.go(self.Degree_to_Radian(self.prev_action), wait=True)
-            isFinished = True
+        # if not(0.1< end_effector[2] < 0.8):
+        #     # print("OUT OF (end_effector), Z : ", end_effector[2])
+        #     # self.move_group.stop()
+        #     # self.move_group.go(self.Degree_to_Radian(self.prev_action), wait=True)
+        #     isFinished = True
 
         # 목표 지점 도달 시
         if (d <= self.goalDistance):
@@ -284,7 +266,7 @@ class Ned2_control(object):
         state_msg.pose.orientation.w = 0
 
         rospy.wait_for_service('/gazebo/set_model_state')
-        for i in range(100):
+        for i in range(500):
             set_state = rospy.ServiceProxy("/gazebo/set_model_state", SetModelState)
             resp = set_state(state_msg)    
 
