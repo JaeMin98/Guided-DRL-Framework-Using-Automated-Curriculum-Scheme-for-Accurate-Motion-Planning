@@ -32,7 +32,7 @@ class Ned2_control(object):
         # CSV 파일 열기
         self.level_point = []
         for i in range(1,6):
-            with open('./DataCSV/level_'+str(i)+'.csv', 'r') as file:
+            with open('./DataCSV/UoC_'+str(i)+'.csv', 'r') as file:
                 reader = csv.reader(file)
 
                 # 각 행들을 저장할 리스트 생성
