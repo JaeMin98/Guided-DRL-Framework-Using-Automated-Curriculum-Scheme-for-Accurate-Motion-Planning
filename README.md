@@ -1,4 +1,4 @@
-[Jae-Min Cho, Cho, Deun-Sol, and Won-Tae Kim. "Guided Deep Reinforcement Learning Framework Using Automated Curriculum Scheme for Accurate Motion Planning." Available at SSRN 4848297.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4848297)<br><br>
+[Jae-Min Cho, Deun-Sol Cho, and Won-Tae Kim. "Guided Deep Reinforcement Learning Framework Using Automated Curriculum Scheme for Accurate Motion Planning." Available at SSRN 4848297.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4848297)<br><br>
 # 🤖 Guided Deep Reinforcement Learning Framework Using Automated Curriculum Scheme for Accurate Motion Planning
 ![Title](https://github.com/user-attachments/assets/5429e937-7ee4-4db0-82c0-d7888ee563f8)<br><br>
 
